@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcm_fesmpn_space=self.webpackChunkcm_fesmpn_space||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"FEMATHS\u5c0f\u7ec4\u5b66\u4e60\u65e5\u5fd7","authorsListPath":"/blog/authors"}')}}]);
