@@ -198,8 +198,8 @@
 <p>这，就是 <strong>FEMATHS 小组学习日志</strong> 的由来。</p>
 <p>后来，随着 Tanger 面临考研与工作的压力，科研学习和小组学习日志一度中断。直到 <strong>2025 年</strong>，桂林电子科技大学数学与计算科学学院公布拟录取名单，Tanger 顺利被录取。这也成为重新启动学习日志的契机——新的笔记就此续写。</p>
 <p>这期间我们也结识了一些新的朋友，小组的视野逐渐拓展，开始探索更多方向。我们讨论决定，将围绕<strong>计算数学</strong>与部分<strong>机器学习</strong>领域，构建一个开放共享的 Wiki，并系统阅读相关领域的重要论文。我们利用 ai 技术创造出了新的网站 logo 以及公众号“山海数模”，如下：</p>
-<p align="center"><img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/new_dyn/299613cd9ecde59cc3e19f35a3ea806b290271023.jpg" alt="logo"></p>
-<p align="center"><img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/new_dyn/16ccf323348b3559d9526bb87b87727d290271023.jpg" alt="logo"></p>
+<p align="center"><img src="https://s2.loli.net/2025/06/12/BzStJo2weFED4vQ.jpg" alt="logo"></p>
+<p align="center"><img src="https://s2.loli.net/2025/06/12/9aDkEfKWvUMrjnm.jpg" alt="logo"></p>
 <p>在正式开始撰写这些内容之前，我们一致认为，应当从最基础、也是最关键的问题讲起——<strong>如何正确对待论文</strong>。<br>
 <!-- -->因此，我们决定将这个主题作为本知识普及网站的第一个系列内容。</p>
 <p>本系列将分为以下四个部分展开：</p>
@@ -236,8 +236,8 @@
 <p>这种结构的最大优势在于逻辑清晰、模块分明，有助于读者快速理解研究的核心内容，也方便科研人员之间的交流与复现。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="research-article-示例解析">Research Article 示例解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#research-article-%E7%A4%BA%E4%BE%8B%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to Research Article 示例解析" title="Direct link to Research Article 示例解析">​</a></h2>
 <p>为了更直观地理解一篇科技论文的结构，我们将以本人发表的一篇研究论文《A Multi-Layer Classifier Model XR-KS of Human Activity Recognition for the Problem of Similar Human Activity》为例，对其各部分内容进行拆解分析。希望借此帮助大家掌握一篇标准 Research Article 的行文方式与写作要点。</p>
-<p align="center"><img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/new_dyn/3e0e83a90510ae58816943513a50f1db290271023.png" alt="logo"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="论文结构解析">论文结构解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to 论文结构解析" title="Direct link to 论文结构解析">​</a></h3>
+<p align="center"><img src="https://s2.loli.net/2025/06/12/wTvohC8WHIEU9tJ.png" alt="logo"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="��论文结构解析">论文结构解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to 论文结构解析" title="Direct link to 论文结构解析">​</a></h3>
 <table><thead><tr><th>部分</th><th>内容摘要（基于本论文）</th><th>写作提示与说明</th></tr></thead><tbody><tr><td><strong>标题</strong></td><td>A Multi-Layer Classifier Model XR-KS of Human Activity Recognition for the Problem of Similar Human Activity</td><td>简明传达研究主题，聚焦“多层分类模型 + 相似人类行为识别”问题。</td></tr><tr><td><strong>摘要</strong></td><td>简要介绍研究背景、人类活动识别中的挑战、提出的 XR-KS 模型及实验效果。</td><td>摘要应具备独立可读性，涵盖研究目的、方法、结果与意义。</td></tr><tr><td><strong>引言</strong></td><td>描述人类活动识别的重要性、现有方法在相似活动区分上的困难、研究动机及本文主要贡献。</td><td>引出研究背景，指出已有方法的不足，明确研究目标。</td></tr><tr><td><strong>方法</strong></td><td>提出 XR-KS 模型结构，分为多个分类阶段，使用多个层级的特征提取与分类器组合进行细粒度识别。</td><td>写清模型架构设计逻辑，每个部分的功能及其改进点，重点突出创新性与合理性。</td></tr><tr><td><strong>实验与结果</strong></td><td>在多个公开人类活动数据集上验证模型性能，并与其他模型进行对比，证明 XR-KS 的优势。</td><td>客观呈现实验设置、指标对比结果，图表清晰展示 XR-KS 在准确率等方面的提升。</td></tr><tr><td><strong>讨论</strong></td><td>分析模型在不同场景下的表现，说明其在处理相似活动问题上的鲁棒性，并指出当前模型的局限性及未来研究方向。</td><td>解释结果的意义，结合实验分析模型优劣，同时展望可能的优化路径或拓展应用。</td></tr><tr><td><strong>结论</strong></td><td>总结 XR-KS 模型的贡献、效果与潜力，强调其对相似活动识别问题的重要意义。</td><td>精炼总结，不重复讨论部分，强化论文的研究价值与前景。</td></tr><tr><td><strong>参考文献</strong></td><td>引用了多个 HAR（人类活动识别）领域的经典文献与相关模型，包括 CNN、RNN、Two-Stream 等模型架构的研究工作。</td><td>保持格式一致、来源权威、数量适中，体现研究基础与归属。</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-总结">📌 总结<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#-%E6%80%BB%E7%BB%93" class="hash-link" aria-label="Direct link to 📌 总结" title="Direct link to 📌 总结">​</a></h2>
