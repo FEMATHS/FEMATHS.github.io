@@ -375,6 +375,329 @@
             <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[linux操作指南之上游分析]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/06-生信分析1（linux操作指南）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/06-生信分析1（linux操作指南）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 安装linux]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-安装linux">1. 安装linux<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#1-%E5%AE%89%E8%A3%85linux" class="hash-link" aria-label="Direct link to 1. 安装linux" title="Direct link to 1. 安装linux">​</a></h2>
+<p>这就不多说了，自己搞一个虚拟机，我用的是Centos7。</p>
+<p>ps：如果使用的是学校集群的话，注意在修改密码中改一下自己的密码，开启后账号为：root，密码自定义（注意是暗文，你敲进去是不会显示的）结束了enter即可</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-预先安装">2. 预先安装<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#2-%E9%A2%84%E5%85%88%E5%AE%89%E8%A3%85" class="hash-link" aria-label="Direct link to 2. 预先安装" title="Direct link to 2. 预先安装">​</a></h2>
+<p>首先要安装anaconda，为了不污染环境</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">-- 安装linux安装包（如果报错自己去anaconda网站找地址）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wget https://repo.anaconda.com/archive/Anaconda3-2023.07-Linux-x86_64.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 解压anaconda，后面的就是刚刚安装好的名字</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">bash Anaconda3-2023.07-Linux-x86_64.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 更新环境变量</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source ~/.bashrc</span><br></span></code></pre></div></div>
+<p>至此，anaconda安装完成。我们再创建一个环境，专门用于生信分析</p>
+<p>tips：anaconda教程请查看TensorFlow1教程，需要包含的步骤为：</p>
+<ol>
+<li>create一个虚拟环境</li>
+<li>设置镜像中除了最后一个，其他都跑</li>
+<li>下载fastqc</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-安装分析软件">3. 安装分析软件<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#3-%E5%AE%89%E8%A3%85%E5%88%86%E6%9E%90%E8%BD%AF%E4%BB%B6" class="hash-link" aria-label="Direct link to 3. 安装分析软件" title="Direct link to 3. 安装分析软件">​</a></h2>
+<p>这些软件因人而异，不一定需要全下载</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">-- 最主要的分析fast格式的软件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda install fastqc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 有时候fastq不止一个文件，联合分析</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda install multigc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 高通量测序数据中去除接头序列和其他不需要的序列</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda install -c bioconda cutadapt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 用于将sra转化为fastq文件的脚本</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda install sra-tools</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>cellranger单独拎出来讲，这个软件应该使用到的频率比较大</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">-- 下载安装包（上官网找，复制粘贴即可，如果报错和anaconda一样）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wget -O cellranger-8.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-8.0.1.tar.gz?Expires=1724187641&amp;Key-Pair-Id=APKAI7S6A5RYOXBWRPDA&amp;Signature=Nym8cB6esJ3Zk7nueAU7BG3hhF2IZBp9FpD4OE5gW0a7C-m4ob7lChp0W-j7ydgnEBYafZ~igPGR~DzUq4CxsXS4XwkENuKhwn7Xr7RbdO~wGGh03fWzYyYt~Y7FK~V~73DzJEplvcls0p~KdbcQYvb7NflwtO9YMY~FnO4fB2VmFf5QBMdpXbPubMG~jNWE58ki7zr6ilsMGAfEnI6Po4cpZKKe1VCN7zJeipUKqS9qj~jGRpIGjHV9abluAPeodE-zCk0F-bsMpXSx6x~avzQfrN6ViJoRNEBemaB7anzMOTJ7L3XEP~QprOaJKKobFWZBGz4MBXokQBxByAZObQ__"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 解压，xyz为版本号</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tar -xzvf cellranger-x.y.z.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 配置环境变量</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source ~/.bashrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 查看是否成功</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cellranger --version</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-------如果失败，进入到vim中写，vim对于初学者来说比较复杂，建议认真读教程，不要多做也不要少做-------</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 1. 打开文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">vim ~/.bashrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 2. 进入编辑模式 ，按键盘i键</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 3. 添加cellranger的路径，将光标移到最后一行，添加内容（-8.0.1是cellranger文件夹的名字，看自己下载的名字是什么）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export PATH=$PATH:/root/cellranger-8.0.1/bin</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 4. 先按Esc退出编辑模式，然后输入:wq，最后按enter</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 5. 重加载</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source ~/.bashrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 6.查看是否成功</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cellranger --version</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-测序数据质量评估">4. 测序数据质量评估<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#4-%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E8%AF%84%E4%BC%B0" class="hash-link" aria-label="Direct link to 4. 测序数据质量评估" title="Direct link to 4. 测序数据质量评估">​</a></h2>
+<p>ok，开始正式的质量评估</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="41-cutadapt">4.1 cutadapt<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#41-cutadapt" class="hash-link" aria-label="Direct link to 4.1 cutadapt" title="Direct link to 4.1 cutadapt">​</a></h4>
+<p><strong>去除接头序列</strong>：</p>
+<p>在测序过程中，接头序列会附加到 DNA 或 RNA 片段的两端。<code>cutadapt</code> 可以从测序读段（reads）中识别并去除这些接头序列。</p>
+<p><strong>去除低质量碱基</strong>：</p>
+<p>除了接头序列，还可以去除位于读段两端的低质量碱基，保证下游分析中使用的是高质量的数据。</p>
+<p><strong>处理指定长度的序列</strong>：</p>
+<p>可以设置参数来过滤特定长度的序列，比如去除过短或过长的序列，这有助于控制下游数据分析中的数据质量。</p>
+<p><strong>双端测序数据处理</strong>：</p>
+<p><code>cutadapt</code> 支持双端测序数据，可以同时处理两端的序列，并保持双端读段的配对关系。</p>
+<p>ps：在做cutadapt之前，首先是需要通过fastqc的质控报告观测是否需要去除的，具体在Adapter Content这一栏中，如果是打钩就不需要，打叉的话分情况讨论：</p>
+<ol>
+<li>数据数据集上down下来的数据一般会显示测序的平台是啥，这时候使用平台默认的就ok了</li>
+<li>自己的数据也知道用的测序平台是啥，同上</li>
+</ol>
+<p>如果用的是illumina的话，read1为AGATCGGAAGAGC，read2为AATGATACGGCGACC。如果用的是其他测序平台的话，建议翻看手册查询（一般都会给出的）</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">-- 检查接头序列</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cutadapt --detect-adapters -o /path/to/trimmed_output.fq /path/to/input.fq</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 本数据为read2（illumina），read1同理，反正都要处理</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cutadapt -a AGATCGGAAGAGC -q 20 --minimum-length 50 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         -j 4 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         -o /root/rowdata/Rhesus-Liver-1_L1_2_trimmed.fq.gz \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         /root/rowdata/Rhesus-Liver-1_L1_2.fq.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>在预处理完数据之后，就可以通过fastqc可视化数据质量了，可以百度网页结果</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">fastqc -t 4 -o ~/fastqc_output /root/rowdata/Rhesus-Liver-1_L1_2.fq.gz</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="42-cellranger">4.2 cellranger<a href="https://your-docusaurus-test-site.com/blog/06-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%901%EF%BC%88linux%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%EF%BC%89#42-cellranger" class="hash-link" aria-label="Direct link to 4.2 cellranger" title="Direct link to 4.2 cellranger">​</a></h4>
+<ol>
+<li><strong>创建自定义参考基因组</strong></li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">-- 这一步是因为我的gtf中，Curated Genomic包含空格，因此需要替换为Curated_Genomic</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sed 's/Curated Genomic/Curated_Genomic/g' GCF_003339765.1_Mmul_10_genomic.gtf &gt; fixed_GCF_003339765.1_Mmul_10_genomic.gtf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 设置核心数，按照自己的配置来定，一般max-1就ok了</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export CELLRANGER_NUM_THREADS=15</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">-- 如果没有处理过gtf的话，原名就ok，如果sed了，那就改成自己处理后的gtf文件名，output-dir为文件输出的位置，可自定义</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cellranger mkref --genome=mmul_ref \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--fasta=/root/compare/GCF_003339765.1_Mmul_10_genomic.fna \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--genes=/root/compare/fixed_GCF_003339765.1_Mmul_10_genomic.gtf \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--output-dir=/root/compare/mmul_ref</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<ol start="2">
+<li><strong>使用 <code>cellranger count</code> 进行比对和分析</strong></li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cellranger count \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --id=liver_analysis \  # 输出文件夹的名称</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --transcriptome=/root/compare/mmul_ref \  # 参考基因组路径</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --fastqs=/root/liver_PE \  # 存放FASTQ文件的目录</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --sample=sample_name \  # 样本名称，一般为liver_PE-1或liver_PE-2这样的</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --expect-cells=1000 \  # 预期细胞数，可根据实验设定调整（也可不用，默认1k）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --localcores=16 \  # 使用的核心数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --localmem=180  # 使用的内存（GB）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --create-bam=true  # 通常默认，但是当发生该参数缺少的报错时可以显式添加</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>需要注意的是，如果我有liver_PE-1和liver_PE-2，那需要分别跑两次，然后对其进行合并</p>
+<ol start="3">
+<li><strong>使用<code>cellranger arr</code>对结果进行合并</strong></li>
+</ol>
+<p>首先船舰csv文件，列出每个样本的<code>molecule_info.h5</code> 文件路径，内容如下：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">library_id,molecule_h5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">liver_PE-1,/root/liver_analysis1/outs/molecule_info.h5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">liver_PE-2,/root/liver_analysis2/outs/molecule_info.h5</span><br></span></code></pre></div></div>
+<p>随后对其进行合并</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cellranger aggr \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --id=liver_combined_analysis \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --csv=aggregation.csv \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --normalize=mapped \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --localcores=16 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  --localmem=180</span><br></span></code></pre></div></div>
+<p>生成一个新的文件夹 <code>liver_combined_analysis</code>，其中包含合并后的 <code>filtered_feature_bc_matrix</code> 文件夹。</p>
+<hr>
+<p>ps:在此推荐两个小工具了，下载和安装就百度吧，基本上都有教程的</p>
+<ol>
+<li>winscp用于本地到服务器上的文件传输（可视化，很方便，并且也可以在这里增删改查文件）</li>
+<li>finalshell可以复制粘贴代码（学校集群cv不了），并且旁边有当前内存，储存空间，cpu占用等有用的信息</li>
+</ol>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[质控与聚类]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/07-生信分析2（质控与聚类）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/07-生信分析2（质控与聚类）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 测出数据部分]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-测出数据部分">1. 测出数据部分<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#1-%E6%B5%8B%E5%87%BA%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86" class="hash-link" aria-label="Direct link to 1. 测出数据部分" title="Direct link to 1. 测出数据部分">​</a></h2>
+<p>在通过前文的处理之后，我们得到了两个输出文件，分别为raw_feature_bc_matrix和filter_feature_bc_matrix。前者为原始数据，后者为cellranger经过自己处理后的数据，后续的分析会基于filter_feature_bc_matrix文件夹（上游比对分析产生的三个文件）。文件夹目录如下</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">--filter_feature_bc_matrix</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">----barcodes.tsv</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">----features.tsv</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">----matrix.mtx</span><br></span></code></pre></div></div>
+<p>逐一解释：</p>
+<p>**barcodes.tsv：**细胞标签</p>
+<p>**features.tsv：**基因ID</p>
+<p>**matrix.mtx：**表达数据</p>
+<p>后续我们会使用seurat（R语言）进行分析</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-质量控制">2. 质量控制<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#2-%E8%B4%A8%E9%87%8F%E6%8E%A7%E5%88%B6" class="hash-link" aria-label="Direct link to 2. 质量控制" title="Direct link to 2. 质量控制">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-数据预处理">2.1 数据预处理<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#21-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86" class="hash-link" aria-label="Direct link to 2.1 数据预处理" title="Direct link to 2.1 数据预处理">​</a></h3>
+<p>导入包的过程忽略了</p>
+<p>首先我们先加载数据集，得到的数据应该如下所示：</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/1.png" alt="" class="img_ev3q"></p>
+<p>这是一个稀疏矩阵（<strong>这很重要，在后续分析中稀疏矩阵占用内存会比疏密矩阵小很多，不然在大数据集的情况下内存会爆炸</strong>）；行代表基因（或者特征，取决于数据类型）；列代表细胞。值代表特定细胞中某个基因的原始 UMI（Unique Molecular Identifier）计数。</p>
+<p>接着，我们需要先进行初步的筛选并查看数据分布，小提琴图与箱线图都是常用的办法，在此我们选择最为常用的小提琴图（更明了）。默认筛选条件为：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">if(表达基因数&lt;200 or 表达基因&lt;3个细胞)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	delete</span><br></span></code></pre></div></div>
+<p>可能来自一定比例的低质量细胞（比如细胞破碎造成细胞质RNA流失）。由于线粒体比单个的转录本大，不容易在破碎的细胞膜中漏出，从而导致测序结果显示线粒体基因的比例在细胞内占比过高。因此，质量控制这一步的目的就是把这些低质量的细胞去除掉。最后计算线粒体基因占所有基因比例后，做小提琴图</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/2.png" alt="" class="img_ev3q"></p>
+<p>我们也可以绘制散点图，查看线粒体和基因数异常分布的数据点</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/3.png" alt="" class="img_ev3q"></p>
+<p>得到初步的分布情况之后，我们就需要根据可视化的情况进行筛选了，在此再进行条件过滤</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">if(表达基因数目&lt;200 or 表达基因数目&gt;5000)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	delete</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">if(线粒体基因占比 &gt; 20%)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	delete</span><br></span></code></pre></div></div>
+<p>这里的阈值都需要自己做条件，请按照可视化后的结果自己调整，举个栗子，心肌细胞，本身就含有较多的线粒体，可以根据实际情况适当的调整阈值</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="高变异基因">高变异基因<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#%E9%AB%98%E5%8F%98%E5%BC%82%E5%9F%BA%E5%9B%A0" class="hash-link" aria-label="Direct link to 高变异基因" title="Direct link to 高变异基因">​</a></h3>
+<p>这步的筛选可以理解为：如果有些基因的表达量都非常高并且每个细胞中表达水平十分相似，那就说明这一些基因的变异度很低，无用可以筛除。高变异基因的筛选方法有：基于方差（vst），基于离散程度，基于负二项分布，基于熵值等等。vst是较为常用的办法。在此默认我们保留2000个基因，得到结果如下</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/4.png" alt="" class="img_ev3q"></p>
+<p>可以看到，我们对标准化与未标准化的数据都进行了比较，标准化后的数据表现更好，使用log1p，即表达量的对数加1；使用其他办法如标准化到10000也是可以的</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-聚类分析">2. 聚类分析<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#2-%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90" class="hash-link" aria-label="Direct link to 2. 聚类分析" title="Direct link to 2. 聚类分析">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-降维">2.1 降维<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#21-%E9%99%8D%E7%BB%B4" class="hash-link" aria-label="Direct link to 2.1 降维" title="Direct link to 2.1 降维">​</a></h3>
+<p>在进行聚类之前，我们需要首先对数据进行降维，降维之后可以将很多不必要的特征删除。PCA是最为常用的办法，我们可以通过前文筛选出的2000个变量进行降维</p>
+<p>在降维之后，我们可以查看PC_1与PC_2中单个细胞之间表现出相关性</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/5.png" alt="" class="img_ev3q"></p>
+<p>也可以查看在两个维度中，数据的分布情况。以主成分PC1、PC2为例，展示主成分分析得到的细胞分布图。</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/6.png" alt="" class="img_ev3q"></p>
+<p>最后画出碎石图，这<strong>直接决定了后续我们聚类所采用的参数</strong></p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/7.png" alt="" class="img_ev3q"></p>
+<p><strong>如何选择参数？</strong></p>
+<p>很简单，寻找拐点位置，并且这个拐点（比如说dim=20）的解释量必须要大于90%。</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">for dim in range(50):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	if dim_for_exp &gt; 90%:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		break</span><br></span></code></pre></div></div>
+<p>tips：有人在论文中做过实验，一般我们取30左右进行，其实25-35都不会很影响后续的分析，但这个<strong>必须按照自己画出来的碎石图进行判断</strong></p>
+<p>当然，也可以通过Jackstraw分析判断选取成分数量</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/8.png" alt="" class="img_ev3q"></p>
+<p>只要高于虚线，dim都是可取的，本文由于电脑配置原因跑起来太慢了，因此只画了20个==</p>
+<p>也可以绘制维度热力图，探索数据集中异质性的主要来源（主打一个图多好看）</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/9.png" alt="" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-聚类">2.2 聚类<a href="https://your-docusaurus-test-site.com/blog/07-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%902%EF%BC%88%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%81%9A%E7%B1%BB%EF%BC%89#22-%E8%81%9A%E7%B1%BB" class="hash-link" aria-label="Direct link to 2.2 聚类" title="Direct link to 2.2 聚类">​</a></h3>
+<p>目前，主流的聚类办法有两种，分别为umap和t-sne。前者聚的更紧凑，后者</p>
+<p>Umap聚类效果更为紧凑，簇间近且边缘轮廓也较为靠近</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/10.png" alt="" class="img_ev3q"></p>
+<p>T-sne相反</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/11.png" alt="" class="img_ev3q"></p>
+<p>你以为这就结束了？大错特错！聚类有很多重要参数，不同的参数聚出来的效果是截然不同的。接下来依次说明：</p>
+<p>Neighbors：单个细胞认为自己邻居数量的半径，这个参数可以由上文的pca得出</p>
+<p>ClustersNumber：簇数量，可以通过leiden算法得出，其中的resolution也需要自己手动控制</p>
+<p><strong>理论上来说，簇数量是由真实世界决定的，比如说表皮细胞，有多少个就聚多少个簇，上文的所有办法都是为这个服务</strong><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/13.png" alt="" class="img_ev3q"></p>
+<p>当然，在前期我们不知道数量的时候，可以通过决策树来决定resolution的值到底是多少，以次先做一个大致的观察。原则是不要交叉，交叉就暂停。整一张抽象的图，按照这样的话就取0.2</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/12.png" alt="" class="img_ev3q"></p>
+<hr>
+<p>需要代码直接联系本人哦，下方评论区or
+邮箱<!-- -->:zhouqijia1110<!-- -->@gmail.com</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[差异基因与细胞标注]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/08-生信分析3（差异基因与细胞标注）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/08-生信分析3（差异基因与细胞标注）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[在单细胞RNA测序分析中，聚类之后筛选差异基因的主要目的是为了深入理解不同细胞群体之间的生物学差异。首先先看我们筛选出来的数据并对其进行解释]]></description>
+            <content:encoded><![CDATA[<p>在单细胞RNA测序分析中，聚类之后筛选差异基因的主要目的是为了深入理解不同细胞群体之间的生物学差异。首先先看我们筛选出来的数据并对其进行解释</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/1-1.png" alt="" class="img_ev3q"></p>
+<p>**p_val：**基因表达量差异P值（一般不看这个）</p>
+<p>**p_val_adj：**校正后的P值（一般看这个）</p>
+<p>**avg_log2FC：**基因在该细胞簇中与其他细胞簇表达量差异倍数的log值，一般大于2是最好的效果，说明差异很大</p>
+<p>**pct.1：**在该细胞簇中表达该基因的细胞数量占比</p>
+<p>**pct.2：**在其他细胞簇中表达该基因的细胞数量占比平均值</p>
+<p>**cluster：**在哪一类簇中</p>
+<p>**gene：**名字</p>
+<p>**myroc：**roc评分，范围从[0,1] ，越大越好</p>
+<hr>
+<p>我们做差异基因检查的目的是什么呢？</p>
+<ol>
+<li><strong>验证聚类结果</strong></li>
+</ol>
+<p>聚类过程将细胞分为不同的群体，但这些群体是否具有生物学意义需要进一步验证。筛选出差异基因可以帮助确定这些聚类是否合理。并且，如果在不同的聚类之间找到显著差异的基因，说明这些群体之间可能存在生物学差异，证明聚类是合理的。</p>
+<ol start="2">
+<li><strong>标记细胞群体</strong></li>
+</ol>
+<p>放在后文讲，这就是细胞标注</p>
+<ol start="3">
+<li><strong>下游分析</strong></li>
+</ol>
+<p>这些基因是下游基因的基础（GO分析，KEGG，拟时序，cell-cell communication等）</p>
+<ol start="4">
+<li><strong>优化聚类</strong></li>
+</ol>
+<p>通过筛选差异基因，可以对初步聚类结果进行评估</p>
+<hr>
+<p>如何对差异基因进行评估？首先，前者的roc评分可以作为一个依据，其次，可以通过可视化进行观察</p>
+<p>该基因在其他簇中的分布情况（小提琴图与聚类特征标注图）</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/2-1.png" alt="" class="img_ev3q"></p>
+<p>通过小提琴图可以观测出，ITBG1这个基因其实在每个簇中都有，<strong>差异基因是通过比较其他簇得出的</strong>，这就说明其实这个基因的差异性不是很明显，<strong>相反RTKN2更有差异性</strong>，我们做到差异基因这一步的时候，必须要有该簇的分布与其他簇不同的结果，这样后续细胞标记出的结果也会更好</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/3-1.png" alt="" class="img_ev3q"></p>
+<p>特征可视化也可以看出，ITGB1在整张图上都是有的，这就说明他的差异性并不是很显著</p>
+<h1>4. 细胞标注</h1>
+<p>这步很重要，并且这和聚类效果息息相关，在细胞标注中，分为singleR自动标注与手动标注两种，后者的精确值是最高的，所以如果没有特殊情况的话，强烈要求使用手动标注。</p>
+<p>手动标注同时需要十分强大的生物知识（我不会QAQ）。具体来说步骤如下：</p>
+<ol>
+<li>查看差异基因后，查询数据库和文献。文献先不提了，数据库可以使用这三个：Cellmarker，singleCellBase， HCA， MCA。数据库中包含人，鼠，猴等等，其中人的最多。</li>
+<li>评估可以使用交叉验证，即使用多个标志基因组合进行注释并进行交叉对比</li>
+<li>对于某一类的细胞群体，我们还可以手动为每个细胞群体赋予一个标签，如“CD4+ T细胞”、“中性粒细胞”等</li>
+</ol>
+<hr>
+<p><strong>tips：对于聚类来说，我们可以先对其进行一个大的聚类，将细胞大群先注释出来，随后在细化聚类</strong></p>
+<hr>
+<p>经验：log2FC的本质就是簇中对比差异性，越大就越说明与其他簇的分布情况不同，相对应的，这在找marker的时候也更方便，而p值只是一个假设检验的值。所以在寻找差异基因的筛选条件时，优先log2FC（云经验，哥们也没做过细胞标注）</p>
+<hr>
+<p>需要代码直接联系本人哦，下方评论区or
+邮箱<!-- -->:zhouqijia1110<!-- -->@gmail.com</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[富集分析]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/09-生信分析4（富集分析）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/09-生信分析4（富集分析）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[通过前文我们可以提取出差异基因，然而差异基因的数量较多，对其进行分析会十分冗长，因此我们可以采取富集分析的方式进行归类。富集的意思是表示差异基因或者差异物质中注释到某个代谢通路的基因或者物质数目在所有差异基因或者物质中的比例显著大于背景基因或物质中注释到某个代谢通路的基因或物质数目在所有背景基因或者物质中的比例。简而言之一句话概括：该差异基因在特定的通路上占比很大]]></description>
+            <content:encoded><![CDATA[<p>通过前文我们可以提取出差异基因，然而差异基因的数量较多，对其进行分析会十分冗长，因此我们可以采取富集分析的方式进行归类。富集的意思是表示差异基因或者差异物质中注释到某个代谢通路的基因或者物质数目在所有差异基因或者物质中的比例显著大于背景基因或物质中注释到某个代谢通路的基因或物质数目在所有背景基因或者物质中的比例。简而言之一句话概括：<strong>该差异基因在特定的通路上占比很大</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="51-go富集分析">5.1 GO富集分析<a href="https://your-docusaurus-test-site.com/blog/09-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%904%EF%BC%88%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%EF%BC%89#51-go%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90" class="hash-link" aria-label="Direct link to 5.1 GO富集分析" title="Direct link to 5.1 GO富集分析">​</a></h2>
+<p>主要用来看基因的三个方面，分别是分子功能、细胞组分、参与的生物过程。</p>
+<p>举例，铁离子结合的GO term是GO:0005506，如果我们对所得到的差异基因进行GO富集分析后得到该term富集，则我们可以认为我们所研究的现象可能与铁离子结合有关系</p>
+<p>进行go分析时，可以得到如下数据：</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/4-1.png" alt="" class="img_ev3q"></p>
+<p>参数解释：</p>
+<p><strong>category：</strong> Gene Ontology数据库中唯一的标号信息</p>
+<p>**over_represented_pvalue：**富集分析P值，P 值越小越显著</p>
+<p><strong>under_represented_pvalue：</strong></p>
+<p>**numDEInCat：**该功能类下的差异基因数目</p>
+<p>**numInCat：**该功能类下的基因数目</p>
+<p>**term：**Gene Ontology功能的描述信息</p>
+<p>**ontology：**该GO的类别(CC，细胞组分；BP，生物进程；MF，分子功能)。</p>
+<p>接着，还可以可视化DAG图，分支代表包含关系，从上至下所定义的功能范围越来越小，一般选取GO富集分析的结果前5位作为有向无环图的主节点，颜色的深浅代表富集程度。概括的说， 可以分析GO terms在富集分析中是否显著，并且terms是如何相互关联的</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/5-1.png" alt="" class="img_ev3q"></p>
+<p>最后，也可以通过柱状图将ontology进行分类，以柱状图呈现出来</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/6-1.png" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/7-1.png" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="52-kegg分析">5.2 KEGG分析<a href="https://your-docusaurus-test-site.com/blog/09-%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%904%EF%BC%88%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%EF%BC%89#52-kegg%E5%88%86%E6%9E%90" class="hash-link" aria-label="Direct link to 5.2 KEGG分析" title="Direct link to 5.2 KEGG分析">​</a></h2>
+<p>在生物体内，不同基因相互协调行使其生物学功能，通过Pathway显著性富集能确定差异表达基因参与的最主要生化代谢途径和信号转导途径。KEGG（Kyoto Encyclopedia of Genes and Genomes）是有关Pathway的主要公共数据库(Kanehisa,2008）。Pathway显著性富集分析以KEGG Pathway为单位，应用超几何检验，找出与整个基因组背景相比，在差异表达基因中显著性富集的Pathway</p>
+<p>通过KEGG分析后，我们可以得出如下表格（注意：使用enrichKEGG后传入的是一个对象，建议转为数据框，方便后续的作图与分析）</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/8-1.png" alt="" class="img_ev3q"></p>
+<p>表格有些大，主要是geneID太长了，分别解释各字段含义：</p>
+<p>**ID：**KEGG的PATHWAY数据库中途径标识</p>
+<p>**Description：**该通路的描述</p>
+<p>**GeneRAatio：**富集到该通路里的差异基因数/全部可以富集到KEGG里的差异基因数，比例越高说明越富集</p>
+<p>**BgRatio：**该通路的全部基因数/该物种全部有KEGG信息的基因数</p>
+<p>**pvalue：**p值，不过多解释了</p>
+<p>**p.adjust：**矫校正过的p值</p>
+<p>**qvalue：**q值</p>
+<p>**geneID：**富集到该通路里的基因的名称</p>
+<p>**Count：**富集到该通路中的差异基因的数目</p>
+<p>接着，我们就可以画出点图与柱状图了。先说前者，这个只需要一行代码就行</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/9-1.png" alt="" class="img_ev3q"></p>
+<p>在绘制柱状图的时候，同时还需要注意柱子颜色的分类。在其他资料中观察到他是按照通路类别进行分类的，一共有如下七种：</p>
+<ul>
+<li><strong>Metabolism（代谢）</strong></li>
+<li><strong>Genetic Information Processing（遗传信息处理）</strong></li>
+<li><strong>Environmental Information Processing（环境信息处理）</strong></li>
+<li><strong>Cellular Processes（细胞过程）</strong></li>
+<li><strong>Organismal Systems（有机体系统）</strong></li>
+<li><strong>Human Diseases（人类疾病）</strong></li>
+<li><strong>Drug Development（药物开发）</strong></li>
+</ul>
+<p>我们可以通过KEGG官网，以id为key进行辨别</p>
+<ol>
+<li>登录<a href="https://www.genome.jp/kegg/pathway.html" target="_blank" rel="noopener noreferrer">KEGG PATHWAY Database (genome.jp)</a></li>
+<li>输入id</li>
+<li>查看类型后手动标注</li>
+</ol>
+<p>以两个我瞎编的为例，柱状图最后应该长这样
+<img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/10-1.png" alt="" class="img_ev3q"></p>
+<h1>批次效应</h1>
+<p>用于多样本整合时才需要，不过多赘述（因为我没有）</p>
+<h1>5.3 Reactome</h1>
+<p>这个其实和前面两个是一样的，区别仅仅是换了一个数据库</p>
+<div class="language-R language-r codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-r codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 使用ReactomePA进行通路富集分析（只有human）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">reactome_results &lt;- enrichPathway(gene = entrez_genes, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                                  organism = "human", </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                                  pvalueCutoff = 0.05, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                                  readable = TRUE)</span><br></span></code></pre></div></div>
+<p>我是做的猴子，这个数据库听说只有人鼠，具体还有什么可以自己百度一下</p>
+<h1>5.4 GSEA</h1>
+<p>这块内容其实和前文的GO与KEGG分析相同，主要不同在于GO富集分析是先筛选差异基因，再判断差异基因在哪些注释的通路存在富集；这涉及到阈值的设定，存在一定主观性并且只能用于表达变化较大的基因，即我们定义的显著差异基因。GSEA则不局限于差异基因，从基因集的富集角度出发，理论上更容易囊括细微但协调性的变化对生物通路的影响。</p>
+<p>图表与上文是一样的，不过多赘述</p>
+<p>（参考自<a href="https://blog.csdn.net/kanghua_du/article/details/136007496" target="_blank" rel="noopener noreferrer">一文掌握单基因GSEA富集分析 | gseaGO and gseaKEGG-CSDN博客</a>）</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PPI分析]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/10-生信分析5（PPI与FT分析）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/10-生信分析5（PPI与FT分析）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[这两块代码含量都比较少，大部分通过在线分析就可以出结果]]></description>
+            <content:encoded><![CDATA[<p>这两块代码含量都比较少，大部分通过在线分析就可以出结果</p>
+<p>构建差异表达基因编码的蛋白质之间的相互作用网络，识别关键调控蛋白质或蛋白质复合物。</p>
+<p>输出的是PPI网络图及其分析结果，发现核心蛋白质。</p>
+<p>在线分析网站：<a href="https://string-db.org/cgi/network?taskId=bcsvtUNgt2ym&amp;sessionId=bcOtOSQeQUGK" target="_blank" rel="noopener noreferrer">356 items (Macaca mulatta) - STRING interaction network (string-db.org)</a></p>
+<p>可选选项：</p>
+<ol>
+<li>隐藏无关联节点</li>
+<li>节点多少可由score设置</li>
+<li>保存为tsv文件（as tabular test output），进入到cytoscape进行美化</li>
+<li>多个选Multiple proteins；单个选Protein by name</li>
+</ol>
+<h1>8 TF分析</h1>
+<p>通过转录因子分析，识别在细胞亚群中可能调控这些差异表达基因的关键转录因子。输出潜在的调控转录因子及其靶基因网络。
+推荐网站：BART，以高变基因为key（但是分析速度很慢，暂且未找到理由，可能是因为我的数据量太大，也有可能是因为TF分析本身就很慢（计算相关性网络非常缓慢，我用的是R语言，读者如果有条件的话可以用python进行计算））</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[拟时序分析]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/11-生信分析6（拟时序分析）</link>
+            <guid>https://your-docusaurus-test-site.com/blog/11-生信分析6（拟时序分析）</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[在进行了聚类之后，其实各细胞是否具有同种生存状态是未知的。拟时序分析的目的就在于将细胞分为不同的分支，将各点（细胞）体现在不同的时间坐标中，从而了解各细胞的状态定位]]></description>
+            <content:encoded><![CDATA[<p>在进行了聚类之后，其实各细胞是否具有同种生存状态是未知的。拟时序分析的目的就在于将细胞分为不同的分支，将各点（细胞）体现在不同的时间坐标中，从而了解各细胞的状态定位</p>
+<p>在做拟时序分析的时候，采取的是机器学习方法（无监督和有监督），因此需要一定的生物学知识对图标进行判断，图中主要是为了表达细胞之间（簇）表达谱系的连续性，因此方向未必与现实情况相同（需要在代码中加入reserve）</p>
+<p>举个例子：B细胞不会分化为NK细胞，但在图中就会如此，这就是reserve的作用</p>
+<p>本文主要采取无监督的方法进行分析</p>
+<hr>
+<p>tips：无监督就是没有真实数据，有监督就是包含一定的真实数据</p>
+<ul>
+<li><strong>无监督数据</strong>：常见的如单细胞 RNA 测序数据，在特定的发育阶段采集了样本，但不确定细胞的确切时间顺序。</li>
+<li><strong>有监督数据</strong>：例如药物处理实验，在不同时间点采集了单细胞样本，记录了每个样本的处理时间，通过这些时间点信息可以进行有监督的拟时序分析。</li>
+</ul>
+<hr>
+<p>首先，使用monocol2创建CellDataset对象后，就有了拟时分析结果的可视化，我们可以将其分为：</p>
+<p>state状态：</p>
+<p>代表了细胞在某一生物学过程中所处的不同阶段。例如，在细胞分化过程中，初始的未分化状态、不同分化路径中的中间状态，以及终末分化状态，都会被标记为不同的“state”。</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/1-2.png" alt="" class="img_ev3q"></p>
+<p>Pseudotime时间：</p>
+<p>这是算法模拟出来的一个时间轴，越接近0就说明越早</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/2-2.png" alt="" class="img_ev3q"></p>
+<p>Seurat分群结果：</p>
+<p>这其实就是之前用umap聚出来的为基准了，按其基因表达模式进行分类</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/3-2.png" alt="" class="img_ev3q"></p>
+<p>细胞注释结果（前文没有注释，如果想要的话可以直接color_by=''labels''）</p>
+<p>state状态分支（）</p>
+<p>其实就是讲state状态分开来，更直观的看出各类处在什么分支上</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/4-2.png" alt="" class="img_ev3q"></p>
+<p>在筛选完差异基因后，可以观察单个差异基因的表达情况。选择差异基因的原因的在整个分化过程中更加关键，能够揭示不同状态或分支间的生物学差异。</p>
+<p>横轴代表拟时间，通常用来模拟细胞从一个初始状态到最终状态的进程；纵轴代表基因表达量，上面的位置表示在特定拟时间点上，基因的表达水平。</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/5-2.png" alt="" class="img_ev3q"></p>
+<p>分支点设定在1的时候，表示关注在第一个分支点处的基因表达变化，细胞分类为3说明分为三个不同的簇。颜色通常表示基因的表达水平，颜色越深，表达越高；颜色越浅，表达越低。热图通过颜色变化来展示基因在不同细胞分支中的表达情况</p>
+<p>这个热图用于展示在细胞分化过程中，不同分支上的基因表达模式。通过观察基因在分支上的表达差异，可以获得这些基因在不同细胞命运中的潜在角色，即哪些基因是上调的，哪些是下调的，从而反映基因表达的动态变化。</p>
+<p><img decoding="async" loading="lazy" src="http://8.130.141.48/wp-content/uploads/2024/08/6-2.png" alt="" class="img_ev3q"></p>
+<p>(图片分辨率或许有一些问题，自己画的时候可以调整一下width和height)</p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Physics Informed Deep Learning (Part I):Data-driven Solutions of Nonlinear Partial Differential Equations]]></title>
             <link>https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one</link>
             <guid>https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one</guid>
