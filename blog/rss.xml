@@ -339,7 +339,7 @@
 <p>这期间我们也结识了一些新的朋友，小组的视野逐渐拓展，开始探索更多方向。我们讨论决定，将围绕<strong>计算数学</strong>与部分<strong>机器学习</strong>领域，构建一个开放共享的 Wiki，并系统阅读相关领域的重要论文。我们利用 ai 技术创造出了新的网站 logo 以及公众号“山海数模”，如下：</p>
 <p align="center"><img src="https://s2.loli.net/2025/06/12/BzStJo2weFED4vQ.jpg" alt="logo"></p>
 <p align="center"><img src="https://s2.loli.net/2025/06/12/9aDkEfKWvUMrjnm.jpg" alt="logo"></p>
-<p>在正式开始撰写这些内容之前，我们一致认为，应当从最基础、也是最关键的问题讲起——<strong>如何正确对待论文</strong>。<br>
+<p>在正式开始撰写这些内容之前，我们一致认为，应当从最基础、也是最关键的问题讲起——<strong>从入门到入土？不，是精通！科技论文完全指南</strong>。<br>
 <!-- -->因此，我们决定将这个主题作为本知识普及网站的第一个系列内容。</p>
 <p>本系列将分为以下四个部分展开：</p>
 <ul>
@@ -369,24 +369,24 @@
 <p>这些不同类型的科技论文各有其功能与侧重点，在学术交流中承担着不同角色。接下来，我们将逐一介绍它们的定义与作用，帮助你建立起对科技论文体系的基本认识。</p>
 <table><thead><tr><th>类型</th><th>定义</th><th>特点</th><th>适用场景</th></tr></thead><tbody><tr><td><strong>Research Article</strong><br>研究论文</td><td>报告一项原创性的研究成果，遵循 IMRaD 结构（引言-方法-结果-讨论）</td><td>内容完整、结构严谨、可复现性强，是期刊论文主力</td><td>科研项目主成果发表、毕业论文、科研申报</td></tr><tr><td><strong>Review Article</strong><br>综述论文</td><td>总结、分析某一领域的研究进展与趋势</td><td>引用多、层次清晰、不包含新实验数据</td><td>研究生开题准备、初入领域者查阅</td></tr><tr><td><strong>Short Communication</strong><br>简报论文</td><td>报告一项尚未完成的研究初步成果</td><td>篇幅短、信息密度高、发表快</td><td>新发现速报、阶段性成果通报</td></tr><tr><td><strong>Technical Report</strong><br>技术报告</td><td>详细描述某项技术或工程实现过程</td><td>强调实践性、非正式发表</td><td>工程开发、软件/算法实现说明</td></tr><tr><td><strong>Case Study</strong><br>案例研究</td><td>通过个案探讨具有代表性的问题</td><td>情境真实、分析具体、有启发性</td><td>医学、管理、社会科学研究</td></tr><tr><td><strong>Conference Paper</strong><br>会议论文</td><td>会议展示成果，可收录于会议论文集</td><td>审稿快、互动性强、有时可扩展为期刊</td><td>初步研究发表、寻求同行反馈</td></tr><tr><td><strong>Perspective / Opinion / Commentary</strong><br>视角/观点/评论文章</td><td>表达作者对某研究问题的独立见解</td><td>观点突出、富启发性、可有争议性</td><td>领域热点讨论、研究方向引导</td></tr><tr><td><strong>Letter / Correspondence</strong><br>来信/通讯</td><td>简短讨论、评论或快速报告小成果</td><td>篇幅短、响应快、适用于学术互动</td><td>对已有论文回应、简短成果共享</td></tr><tr><td><strong>Method / Protocol Paper</strong><br>方法/协议论文</td><td>描述实验、计算或研究方法的具体步骤</td><td>可复现性高、步骤详细</td><td>工具方法共享、技术标准化</td></tr></tbody></table>
 <p>我们接下来将以最常见、也是科研人员最常阅读与撰写的论文形式——**Research Article（研究论文）**为例，来展开讲解一篇科技论文的标准结构。</p>
-<p>研究论文通常遵循一个被广泛接受的结构化写作框架，即 <strong>IMRaD 模式</strong>：即<strong>I – Introduction（引言）</strong>、<strong>M – Methods（方法）</strong> 、<strong>R – Results（结果）<strong>和</strong>D – Discussion（讨论）</strong>。</p>
+<p>研究论文通常遵循一个被广泛接受的结构化写作框架，即 <strong>IMRaD 模式</strong>：即<strong>I – Introduction（引言）</strong>、<strong>M – Methods（方法）</strong> 、<strong>R – Results（结果）</strong>、<strong>A - Abstract（摘要）<strong>和</strong>D – Discussion（讨论）</strong>。</p>
 <table><thead><tr><th>结构部分</th><th>英文名称</th><th>内容简介</th><th>写作要点与目的</th></tr></thead><tbody><tr><td>摘要</td><td>Abstract</td><td>对研究的目的、方法、主要结果和结论进行简洁总结。通常 200–300 字。</td><td>独立成篇、简明扼要，帮助读者快速了解整篇文章的核心信息。</td></tr><tr><td>引言</td><td>Introduction</td><td>说明研究背景、已有工作、待解决的问题和研究目的。</td><td>明确“研究动机”，交代“为什么做”以及“本文的贡献”。</td></tr><tr><td>方法</td><td>Methods</td><td>描述实验设计、数据来源、模型方法、算法流程、技术路线等。</td><td>强调可复现性，写清楚“怎么做”，确保别人能照着你的方法重复研究。</td></tr><tr><td>结果</td><td>Results</td><td>呈现研究所得的关键数据、图表和实验结果。</td><td>客观陈述发现，“得到了什么”，不做解释，使用图表或数据增强表达效果。</td></tr><tr><td>讨论</td><td>Discussion</td><td>分析和解释结果的意义，讨论其对领域的贡献、限制和未来方向。</td><td>深入讨论结果“说明了什么”，体现批判性思维，与他人研究进行对比。</td></tr><tr><td>结论（可选）</td><td>Conclusion</td><td>简要总结全文研究内容及其意义，强调研究的价值或应用前景。</td><td>突出研究亮点，避免重复讨论，强化研究的整体贡献。</td></tr><tr><td>参考文献</td><td>References</td><td>列出文中引用的全部文献。</td><td>符合期刊引用格式，完整准确，体现研究的理论基础和关联。</td></tr></tbody></table>
 <hr>
 <p>这种结构的最大优势在于逻辑清晰、模块分明，有助于读者快速理解研究的核心内容，也方便科研人员之间的交流与复现。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="research-article-示例解析">Research Article 示例解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#research-article-%E7%A4%BA%E4%BE%8B%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to Research Article 示例解析" title="Direct link to Research Article 示例解析">​</a></h2>
 <p>为了更直观地理解一篇科技论文的结构，我们将以本人发表的一篇研究论文《A Multi-Layer Classifier Model XR-KS of Human Activity Recognition for the Problem of Similar Human Activity》为例，对其各部分内容进行拆解分析。希望借此帮助大家掌握一篇标准 Research Article 的行文方式与写作要点。</p>
 <p align="center"><img src="https://s2.loli.net/2025/06/12/wTvohC8WHIEU9tJ.png" alt="logo"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="论��文结构解析">论文结构解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to 论文结构解析" title="Direct link to 论文结构解析">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="论文结构解析">论文结构解析<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90" class="hash-link" aria-label="Direct link to 论文结构解析" title="Direct link to 论文结构解析">​</a></h3>
 <table><thead><tr><th>部分</th><th>内容摘要（基于本论文）</th><th>写作提示与说明</th></tr></thead><tbody><tr><td><strong>标题</strong></td><td>A Multi-Layer Classifier Model XR-KS of Human Activity Recognition for the Problem of Similar Human Activity</td><td>简明传达研究主题，聚焦“多层分类模型 + 相似人类行为识别”问题。</td></tr><tr><td><strong>摘要</strong></td><td>简要介绍研究背景、人类活动识别中的挑战、提出的 XR-KS 模型及实验效果。</td><td>摘要应具备独立可读性，涵盖研究目的、方法、结果与意义。</td></tr><tr><td><strong>引言</strong></td><td>描述人类活动识别的重要性、现有方法在相似活动区分上的困难、研究动机及本文主要贡献。</td><td>引出研究背景，指出已有方法的不足，明确研究目标。</td></tr><tr><td><strong>方法</strong></td><td>提出 XR-KS 模型结构，分为多个分类阶段，使用多个层级的特征提取与分类器组合进行细粒度识别。</td><td>写清模型架构设计逻辑，每个部分的功能及其改进点，重点突出创新性与合理性。</td></tr><tr><td><strong>实验与结果</strong></td><td>在多个公开人类活动数据集上验证模型性能，并与其他模型进行对比，证明 XR-KS 的优势。</td><td>客观呈现实验设置、指标对比结果，图表清晰展示 XR-KS 在准确率等方面的提升。</td></tr><tr><td><strong>讨论</strong></td><td>分析模型在不同场景下的表现，说明其在处理相似活动问题上的鲁棒性，并指出当前模型的局限性及未来研究方向。</td><td>解释结果的意义，结合实验分析模型优劣，同时展望可能的优化路径或拓展应用。</td></tr><tr><td><strong>结论</strong></td><td>总结 XR-KS 模型的贡献、效果与潜力，强调其对相似活动识别问题的重要意义。</td><td>精炼总结，不重复讨论部分，强化论文的研究价值与前景。</td></tr><tr><td><strong>参考文献</strong></td><td>引用了多个 HAR（人类活动识别）领域的经典文献与相关模型，包括 CNN、RNN、Two-Stream 等模型架构的研究工作。</td><td>保持格式一致、来源权威、数量适中，体现研究基础与归属。</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-总结">📌 总结<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#-%E6%80%BB%E7%BB%93" class="hash-link" aria-label="Direct link to 📌 总结" title="Direct link to 📌 总结">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a href="https://your-docusaurus-test-site.com/blog/00-Ahead-of-our-research-efforts#%E6%80%BB%E7%BB%93" class="hash-link" aria-label="Direct link to 总结" title="Direct link to 总结">​</a></h2>
 <p>通过拆解本论文的结构与内容，我们可以看到：</p>
 <ul>
 <li>一篇优秀的 Research Article 应该具备清晰的问题定义、合理的方法设计、严谨的实验验证、深入的结果分析。</li>
 <li>语言不求华丽，但要求逻辑严密、信息准确。</li>
 <li>无论哪一部分，都需要围绕“我做了什么、为什么做、怎么做、结果如何、说明了什么”这五个核心问题来展开。</li>
 </ul>
-<p>希望这个例子能帮助你更好地理解科技论文的写作规范，为你的科研之路打下基础。请关注 FEMATHS 小组和山海数模学习更多知识！</p>]]></content:encoded>
+<p>📌 <strong>欢迎关注 FEMATHS 小组与山海数模，持续学习更多数学建模与科研相关知识！</strong></p>]]></content:encoded>
             <category>从入门到入土？不，是精通！科技论文完全指南</category>
         </item>
         <item>
@@ -584,6 +584,46 @@
             <link>https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper</link>
             <guid>https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper</guid>
             <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[相信看到这里的朋友，已经对一篇科研论文（Research Article）的基本结构相当熟悉了。科研工作者最常撰写的文章类型之一就是采用 IMRaD 模式 的研究论文，即包括以下几个部分：]]></description>
+            <content:encoded><![CDATA[<p>相信看到这里的朋友，已经对一篇科研论文（Research Article）的基本结构相当熟悉了。科研工作者最常撰写的文章类型之一就是采用 <strong>IMRaD 模式</strong> 的研究论文，即包括以下几个部分：</p>
+<ul>
+<li><strong>I – Introduction（引言）</strong></li>
+<li><strong>M – Methods（方法）</strong></li>
+<li><strong>R – Results（结果）</strong></li>
+<li><strong>A – Abstract（摘要）</strong></li>
+<li><strong>D – Discussion（讨论）</strong></li>
+</ul>
+<p>我将结合自己的经历，分享论文写作的一般流程。需要注意的是，<strong>论文的撰写顺序通常并不等同于其最终的排版结构</strong>。在科研实践中，写作往往是从已有的研究结果出发，逐步向前、向后延展的。</p>
+<p>通常，在完成一段时间的实验或建模工作后，我们首先获得的是一组数据或研究结果。因此，写作往往是从 <strong>Results（结果）</strong> 开始，根据结果再去梳理并书写 <strong>Methods（方法）</strong>，说明这些结果是如何得到的。随后撰写 <strong>Discussion（讨论）</strong>，对结果进行分析和解释，进一步明确其意义与不足之处。</p>
+<p>在此基础上，我们再回到前面，撰写 <strong>Introduction（引言）</strong>，梳理研究背景、动机、已有工作与创新点。最后撰写 <strong>Abstract（摘要）</strong>，对全文进行简洁总结。</p>
+<p>因此，我们推荐的实际写作顺序如下：</p>
+<table><thead><tr><th style="text-align:center">论文结构（发表顺序）</th><th style="text-align:center">实际写作建议顺序</th></tr></thead><tbody><tr><td style="text-align:center">Abstract</td><td style="text-align:center">Results</td></tr><tr><td style="text-align:center">Introduction</td><td style="text-align:center">Methods</td></tr><tr><td style="text-align:center">Methods</td><td style="text-align:center">Discussion</td></tr><tr><td style="text-align:center">Results</td><td style="text-align:center">Introduction</td></tr><tr><td style="text-align:center">Discussion</td><td style="text-align:center">Abstract</td></tr></tbody></table>
+<p>采用这种写作顺序，有助于围绕核心研究结果进行清晰、有逻辑的论文构建，同时避免“边写边想”的低效写作状态。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="写作的常见结构">写作的常见结构<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E5%86%99%E4%BD%9C%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84" class="hash-link" aria-label="Direct link to 写作的常见结构" title="Direct link to 写作的常见结构">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="abstract摘要">Abstract（摘要）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#abstract%E6%91%98%E8%A6%81" class="hash-link" aria-label="Direct link to Abstract（摘要）" title="Direct link to Abstract（摘要）">​</a></h3>
+<p>摘要作为论文的开头部分，是整篇文章的核心思想浓缩表达。从读者的角度来看，摘要往往是他们接触论文的第一段文字，因此其写作质量直接影响读者是否有兴趣继续阅读下去。</p>
+<p>一个优秀的摘要应当做到<strong>清晰（clarity）、简洁（brevity）、明了（lucidity）</strong>，准确传达研究的关键信息。通常可以遵循以下基本结构：</p>
+<ul>
+<li><strong>研究背景与现状</strong>（现存问题或研究空白）</li>
+<li><strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）</li>
+<li><strong>主要结果与结论</strong>（最终发现了什么，有哪些贡献或意义）</li>
+</ul>
+<p>这样的写作框架不仅能够帮助读者迅速把握论文的研究重点，也为后续的引言和正文做好铺垫。</p>
+<p>首先是描述现状：</p>
+<blockquote>
+<p>Sensor-based human activity recognition is now well developed, but there are still many challenges, such as insufficient accuracy in the identification of similar activities.（目前，基于传感器的人类活动识别技术已经得到了很好的发展，但仍然存在许多挑战，例如识别类似活动的准确性不够。）</p>
+</blockquote>
+<p>常见的句子还有：</p>
+<blockquote>
+<p>In the field of ..., ... is a problem that arouses lasting concern, however ....（在...领域，…是一个引起持久关注的问题，然而...。）</p>
+</blockquote>
+<blockquote>
+<p>For a long time, people have focused on studying/considering/paying attention to/designing/improving …, but have not considered …, thus restricting ….（长久以来，人们侧重于研究/考虑/关注/设计/提高….，但尚未考虑…，从而制约了…。）</p>
+</blockquote>
+<blockquote>
+<p>As we all know, improving … is an important way to improve (efficiency/…), so improving … is an urgent problem to be solved. （众所周知，提高…是提升（效率/…）的重要途径，因此，提高…是急待解决的问题。）</p>
+</blockquote>
+<p>然后可以介绍我们这篇论文做了什么</p>]]></content:encoded>
             <category>从入门到入土？不，是精通！科技论文完全指南</category>
         </item>
         <item>
@@ -914,15 +954,15 @@
             <link>https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one</link>
             <guid>https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one</guid>
             <pubDate>Sat, 17 Jun 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[这一篇介绍了一篇关于使用数据驱动方法实现的 Physics-Informed Deep Learning（PINN）经典论文。]]></description>
-            <content:encoded><![CDATA[<p>这一篇介绍了一篇关于使用数据驱动方法实现的 Physics-Informed Deep Learning（PINN）经典论文。</p>
-<h2></h2>
+            <description><![CDATA[这是一篇关于使用数据驱动方法实现的 Physics-Informed Deep Learning（PINN）经典论文。]]></description>
+            <content:encoded><![CDATA[<p>这是一篇关于使用数据驱动方法实现的 Physics-Informed Deep Learning（PINN）经典论文。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="论文的来源">论文的来源<a href="https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one#%E8%AE%BA%E6%96%87%E7%9A%84%E6%9D%A5%E6%BA%90" class="hash-link" aria-label="Direct link to 论文的来源" title="Direct link to 论文的来源">​</a></h2>
 <p>    首先，本人通过搜索很多 PINN 的论文，发现许多论文都在引用这篇论文，在好奇心的驱使下就在 google 学术上搜索了这篇论文，我们可以看到出现了两个版本，从标题名上看大致相同，作者也没变化。据开组会时，覃老师介绍说可能是因为前面这个版本是相当于没有正式发表还处于一个草稿阶段，后面那篇是经过整理并发表到了比较好的期刊中，我们可以从引用量(比较粗的<font color="red">红线</font>)以及 easyScholar (比较细的<font color="red">红线</font>)打上的标签还有作者希望我们引用这项工作的论文排名(作者更希望我们引用 2019 年正式分布的那篇)中看到区别，但不妨碍这几篇论文的优秀性，总的来说 M Raissi 等人的工作是非常出色的。</p>
 <p><img decoding="async" loading="lazy" src="https://pic.imgdb.cn/item/649d31dc1ddac507cc30c3f0.jpg" alt="" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://pic.imgdb.cn/item/649d3c241ddac507cc427561.jpg" alt="" class="img_ev3q"></p>
 <p>    他们也将这篇论文的工作产生的代码无私的奉献了出来，可以通过访问 Github 来查看相关代码，上面的代码是 tensorflow 的 1 版本写的，到现在 tensorflow 已经不支持 1 版本的 python 包安装，所以可能需要将上面的代码写成 2 版本的形式才能运行。 👉<a href="https://github.com/maziarraissi/PINNs" target="_blank" rel="noopener noreferrer">点我查看 Github 仓库</a></p>
 <p><img decoding="async" loading="lazy" src="https://pic.imgdb.cn/item/649d37c91ddac507cc3a6e68.jpg" alt="" class="img_ev3q"></p>
-<p>    这篇论文被视为数据驱动的 PINN 的研究工作的思想源头，他的论文分为三个部分，现在来介绍第一部分。<a href="https://arxiv.org/abs/1711.10561" target="_blank" rel="noopener noreferrer">原论文(Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations)</a></p>
+<p>    这篇论文被视为数据驱动的 PINN 的研究工作的思想源头，有打算实现数据驱动的 PINN 工作的人可以先稍微熟悉该论文。他的论文分为三个部分，现在来介绍第一部分。<a href="https://arxiv.org/abs/1711.10561" target="_blank" rel="noopener noreferrer">原论文(Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations)</a></p>
 <p>    想要明白 PINN，先从 PINN 是什么说起，PINN 其实是 Physics Informed Deep Learning 的缩写，中文中比较准确的翻译是<strong>物理信息深度学习</strong>，人话就是结合了物理信息的深度学习模型。</p>
 <p>    其实将机器学习用在求解偏微分方程上不是什么难事，但是直接用肯定是不行的，主要面对了几个问题，只要能很好的解决以下问题，那问题就迎刃而解了。</p>
 <ul>
