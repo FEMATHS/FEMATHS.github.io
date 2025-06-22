@@ -621,28 +621,87 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="写作的常见结构">写作的常见结构<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E5%86%99%E4%BD%9C%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84" class="hash-link" aria-label="Direct link to 写作的常见结构" title="Direct link to 写作的常见结构">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="abstract摘要">Abstract（摘要）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#abstract%E6%91%98%E8%A6%81" class="hash-link" aria-label="Direct link to Abstract（摘要）" title="Direct link to Abstract（摘要）">​</a></h3>
 <p>摘要作为论文的开头部分，是整篇文章的核心思想浓缩表达。从读者的角度来看，摘要往往是他们接触论文的第一段文字，因此其写作质量直接影响读者是否有兴趣继续阅读下去。</p>
-<p>一个优秀的摘要应当做到<strong>清晰（clarity）、简洁（brevity）、明了（lucidity）</strong>，准确传达研究的关键信息。通常可以遵循以下基本结构：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
+<p>一个优秀的摘要应当做到<strong>清晰（clarity）、简洁（brevity）、明了（lucidity）</strong>，为了达成以上三个目的，我们建议使用三段式来完成摘要的书写，这个结构能够准确传达研究的关键信息，通常可以遵循以下基本结构：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-推荐结构模板">✅ 推荐结构模板<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E6%8E%A8%E8%8D%90%E7%BB%93%E6%9E%84%E6%A8%A1%E6%9D%BF" class="hash-link" aria-label="Direct link to ✅ 推荐结构模板" title="Direct link to ✅ 推荐结构模板">​</a></h3>
 <ul>
-<li><strong>研究背景与现状</strong>（现存问题或研究空白）</li>
-<li><strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）</li>
-<li><strong>主要结果与结论</strong>（最终发现了什么，有哪些贡献或意义）</li>
+<li><strong>第一段</strong>：<strong>研究背景与现状</strong>（现存问题或研究空白）</li>
+<li><strong>第二段</strong>：<strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）</li>
+<li><strong>第三段</strong>：<strong>主要结果与结论</strong>（最终发现了什么，有哪些贡献或意义）</li>
 </ul>
 <p>这样的写作框架不仅能够帮助读者迅速把握论文的研究重点，也为后续的引言和正文做好铺垫。</p>
-<p>首先是描述现状：</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段研究背景与现状现存问题或研究空白"><strong>第一段</strong>：<strong>研究背景与现状</strong>（现存问题或研究空白）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E4%B8%8E%E7%8E%B0%E7%8A%B6%E7%8E%B0%E5%AD%98%E9%97%AE%E9%A2%98%E6%88%96%E7%A0%94%E7%A9%B6%E7%A9%BA%E7%99%BD" class="hash-link" aria-label="Direct link to 第一段研究背景与现状现存问题或研究空白" title="Direct link to 第一段研究背景与现状现存问题或研究空白">​</a></h4>
+<p>首先是描述现状，在描述现状中一般采取先扬后抑，先肯定 XXX 技术已经取得了显著进展，再指出其仍存在的不足之处。这些不足应与我们后续研究所要解决的问题密切相关，才能确保第一段在逻辑上的连贯与必要性。在此基础上，我们还得简要介绍我们提出的模型，它跟其他模型的不同之处：</p>
+<p>例如：</p>
 <blockquote>
-<p>Sensor-based human activity recognition is now well developed, but there are still many challenges, such as insufficient accuracy in the identification of similar activities.（目前，基于传感器的人类活动识别技术已经得到了很好的发展，但仍然存在许多挑战，例如识别类似活动的准确性不够。）</p>
+<p>Sensor-based human activity recognition is now well developed, but there are still many challenges, such as insufficient accuracy in the identification of similar activities. To overcome this issue, we collect data during similar human activities using three-axis acceleration and gyroscope sensors. We developed a model capable of classifying similar activities of human behavior, and the effectiveness and generalization capabilities of this model are evaluated. Based on the standardization and normalization of data, we consider the inherent similarities of human activity behaviors by introducing the multi-layer classifier model.</p>
 </blockquote>
-<p>常见的句子还有：</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段研究方法或解决方案本研究采用了什么方法模型或思路"><strong>第二段</strong>：<strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E6%88%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9C%AC%E7%A0%94%E7%A9%B6%E9%87%87%E7%94%A8%E4%BA%86%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E6%A8%A1%E5%9E%8B%E6%88%96%E6%80%9D%E8%B7%AF" class="hash-link" aria-label="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路" title="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路">​</a></h4>
+<p>紧接着应阐明本文所采用的研究方法。该部分没有严格的结构要求，但应以<strong>准确传达方法本质</strong>为首要目标，其次才考虑语言的<strong>简洁与凝练</strong>。在确保表达准确的前提下，力求用最直接的方式让读者理解所提出方法的核心思想与实施方式。</p>
+<p>例如：</p>
 <blockquote>
-<p>In the field of ..., ... is a problem that arouses lasting concern, however ....（在...领域，…是一个引起持久关注的问题，然而...。）</p>
+<p>The first layer of the proposed model is a random forest model based on the XGBoost feature selection algorithm. In the second layer of this model, similar human activities are extracted by applying the kernel Fisher discriminant analysis (KFDA) with feature mapping. Then, the support vector machine (SVM) model is applied to classify similar human activities.</p>
 </blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第三段主要结果与结论最终发现了什么有哪些贡献或意义"><strong>第三段</strong>：<strong>主要结果与结论</strong>（最终发现了什么，有哪些贡献或意义）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%89%E6%AE%B5%E4%B8%BB%E8%A6%81%E7%BB%93%E6%9E%9C%E4%B8%8E%E7%BB%93%E8%AE%BA%E6%9C%80%E7%BB%88%E5%8F%91%E7%8E%B0%E4%BA%86%E4%BB%80%E4%B9%88%E6%9C%89%E5%93%AA%E4%BA%9B%E8%B4%A1%E7%8C%AE%E6%88%96%E6%84%8F%E4%B9%89" class="hash-link" aria-label="Direct link to 第三段主要结果与结论最终发现了什么有哪些贡献或意义" title="Direct link to 第三段主要结果与结论最终发现了什么有哪些贡献或意义">​</a></h4>
+<p>最后，我们需要介绍模型的实验结果，包括运行效率、性能表现和评估指标，并突出模型的优势。至此，整个摘要的内容就基本完成了。</p>
+<p>例如：</p>
 <blockquote>
-<p>For a long time, people have focused on studying/considering/paying attention to/designing/improving …, but have not considered …, thus restricting ….（长久以来，人们侧重于研究/考虑/关注/设计/提高….，但尚未考虑…，从而制约了…。）</p>
+<p>Our model is experimentally evaluated, and it is also applied to four benchmark datasets: UCI DSA, UCI HAR, WISDM, and IM-WSHA. The experimental results demonstrate that the proposed approach achieves recognition accuracies of 97.69%, 97.92%, 98.12%, and 90.6%, indicating excellent recognition performance. Additionally, we performed K-fold cross-validation on the random forest model and utilized ROC curves for the SVM classifier to assess the model’s generalization ability. The results indicate that our multi-layer classifier model exhibits robust generalization capabilities.</p>
 </blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction介绍">Introduction（介绍）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#introduction%E4%BB%8B%E7%BB%8D" class="hash-link" aria-label="Direct link to Introduction（介绍）" title="Direct link to Introduction（介绍）">​</a></h3>
+<p><strong>“Introduction”</strong> 顾名思义，是整篇论文的开端，它不仅介绍研究背景与核心模型，更是作者站在专业视角，以通俗且严谨的语言引导读者理解全文核心思想的关键部分。尽管引言部分没有固定格式，但写作时仍应遵循一定的逻辑和结构，并结合不断练习和积累提升写作质量。一个好的 Introduction 能够帮助不了解你研究领域的读者，在短时间内把握论文的主题、研究意义以及你在其中的贡献。因此，Introduction 不是背景的堆砌，而是一个故事的开端。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议-1">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE-1" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
+<ol>
+<li>
+<p><strong>多阅读优秀引言</strong><br>
+<!-- -->初学者应多阅读同领域内高水平论文的引言部分，特别是顶会、顶刊文章中的表达方式、背景铺陈、研究动机、贡献总结等内容。</p>
+</li>
+<li>
+<p><strong>尝试写出“自己风格”的引言</strong><br>
+<!-- -->在模仿中逐步探索出属于自己的语言风格和逻辑结构，目标是：即使读者对该研究领域并不熟悉，也能通过阅读你的 Introduction 快速掌握论文的研究动机、背景问题与研究意义。</p>
+</li>
+<li>
+<p><strong>逻辑清晰、循序渐进</strong><br>
+<!-- -->好的引言往往从 <strong>宏观背景</strong> 讲起，逐步聚焦至当前研究的具体问题，然后阐述已有工作的不足，最后说明你的工作解决了什么问题，有哪些贡献。</p>
+</li>
+<li>
+<p><strong>参考文献的使用</strong></p>
+<ul>
+<li>尽量引用 <strong>近三年内的研究成果</strong>，以确保你的研究立足于当前学术前沿；</li>
+<li>只有在引用奠基性理论或方法时，才建议使用三年以上甚至更久的经典文献；</li>
+<li>每一条引用都应起到支撑你论述的作用，而不是堆砌数量。</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-推荐结构模板-1">✅ 推荐结构模板<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E6%8E%A8%E8%8D%90%E7%BB%93%E6%9E%84%E6%A8%A1%E6%9D%BF-1" class="hash-link" aria-label="Direct link to ✅ 推荐结构模板" title="Direct link to ✅ 推荐结构模板">​</a></h3>
+<ul>
+<li><strong>第一段</strong>：引入研究背景和领域发展现状；</li>
+<li><strong>第二段</strong>：指出当前研究的挑战、空白或未解决问题；</li>
+<li><strong>第三段</strong>：概述你的方法、思路或创新点；</li>
+<li><strong>第四段</strong>：简明扼要地总结本文的主要贡献。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段引入研究背景和领域发展现状"><strong>第一段</strong>：引入研究背景和领域发展现状；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E5%BC%95%E5%85%A5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E5%92%8C%E9%A2%86%E5%9F%9F%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6" class="hash-link" aria-label="Direct link to 第一段引入研究背景和领域发展现状" title="Direct link to 第一段引入研究背景和领域发展现状">​</a></h4>
+<p>例如：</p>
 <blockquote>
-<p>As we all know, improving … is an important way to improve (efficiency/…), so improving … is an urgent problem to be solved. （众所周知，提高…是提升（效率/…）的重要途径，因此，提高…是急待解决的问题。）</p>
+<p>Human activity recognition (HAR) involves identifying various human behaviors through a series of observations of individuals and their surrounding environment [1]. HAR has been generally applied in many fields, such as security and surveillance [2], sports and fitness [3], industry and manufacturing [4], autonomous driving [5], and the references therein...</p>
 </blockquote>
-<p>然后可以介绍我们这篇论文做了什么</p>]]></content>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段指出当前研究的挑战空白或未解决问题"><strong>第二段</strong>：指出当前研究的挑战、空白或未解决问题；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E6%8C%87%E5%87%BA%E5%BD%93%E5%89%8D%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8C%91%E6%88%98%E7%A9%BA%E7%99%BD%E6%88%96%E6%9C%AA%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98" class="hash-link" aria-label="Direct link to 第二段指出当前研究的挑战空白或未解决问题" title="Direct link to 第二段指出当前研究的挑战空白或未解决问题">​</a></h4>
+<p>例如：</p>
+<blockquote>
+<p>However, a problem was identified where single-classification models can cause confusion when distinguishing similar activities, such as ascending stairs and descending stairs. In a study conducted by Jansi et al. [23], they utilized chaotic mapping to compress raw tri-axial accelerometer data and extracted 38 time-domain and frequency-domain features. These features included mean, standard deviation, root mean square, dominant frequency coefficient, spectral energy, and others. They achieved a recognition accuracy of 83.22% in human activity recognition...</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第三段概述你的方法思路或创新点"><strong>第三段</strong>：概述你的方法、思路或创新点；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%89%E6%AE%B5%E6%A6%82%E8%BF%B0%E4%BD%A0%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%9D%E8%B7%AF%E6%88%96%E5%88%9B%E6%96%B0%E7%82%B9" class="hash-link" aria-label="Direct link to 第三段概述你的方法思路或创新点" title="Direct link to 第三段概述你的方法思路或创新点">​</a></h4>
+<p>例如：</p>
+<blockquote>
+<p>In this paper, we propose the XR-KS (detailed description is given in Section 2) design aimed at addressing the issue of confusion between similar activities. To address the issue of similar activity feature similarity, we propose an SVM classification approach that utilizes KFDA. This approach effectively categorizes similar activities. Additionally, we conducted classification experiments on four common benchmark datasets and performed detailed analyses on these datasets. We compared our model to mainstream classification models. Experimental results demonstrate that our model exhibits excellent classification performance...</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第四段简明扼要地总结本文的主要贡献"><strong>第四段</strong>：简明扼要地总结本文的主要贡献。<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E5%9B%9B%E6%AE%B5%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E5%9C%B0%E6%80%BB%E7%BB%93%E6%9C%AC%E6%96%87%E7%9A%84%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE" class="hash-link" aria-label="Direct link to 第四段简明扼要地总结本文的主要贡献" title="Direct link to 第四段简明扼要地总结本文的主要贡献">​</a></h4>
+<p>例如：</p>
+<blockquote>
+<p>The remaining sections of this paper are organized as follows: Section 2 provides a brief introduction to the work carried out in this paper, along with details about the dataset used. Section 3 conducts a basic data analysis and employs appropriate data preprocessing techniques. This section introduces our proposed approach for human motion, which is based on a multi-layer classifier. Section 4 presents the experimental setup, provides results for our proposed method on multiple datasets, and offers an analysis and discussion of these results. Finally, in Section 5, we will summarize the insights gathered from these experiments and outline future directions.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="methods-方法">Methods （方法）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#methods-%E6%96%B9%E6%B3%95" class="hash-link" aria-label="Direct link to Methods （方法）" title="Direct link to Methods （方法）">​</a></h3>
+<p>方法部分同样要参考许多同一领域的论文，看看同一领域的论文是如何撰写文章的，一般来说，我们会先把</p>]]></content>
         <author>
             <name>Tanger</name>
             <uri>https://github.com/redhat123456</uri>
