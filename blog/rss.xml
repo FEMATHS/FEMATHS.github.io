@@ -599,8 +599,7 @@
 <p>因此，我们推荐的实际写作顺序如下：</p>
 <table><thead><tr><th style="text-align:center">论文结构（发表顺序）</th><th style="text-align:center">实际写作建议顺序</th></tr></thead><tbody><tr><td style="text-align:center">Abstract</td><td style="text-align:center">Results</td></tr><tr><td style="text-align:center">Introduction</td><td style="text-align:center">Methods</td></tr><tr><td style="text-align:center">Methods</td><td style="text-align:center">Discussion</td></tr><tr><td style="text-align:center">Results</td><td style="text-align:center">Introduction</td></tr><tr><td style="text-align:center">Discussion</td><td style="text-align:center">Abstract</td></tr></tbody></table>
 <p>采用这种写作顺序，有助于围绕核心研究结果进行清晰、有逻辑的论文构建，同时避免“边写边想”的低效写作状态。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="写作的常见结构">写作的常见结构<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E5%86%99%E4%BD%9C%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84" class="hash-link" aria-label="Direct link to 写作的常见结构" title="Direct link to 写作的常见结构">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="abstract摘要">Abstract（摘要）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#abstract%E6%91%98%E8%A6%81" class="hash-link" aria-label="Direct link to Abstract（摘要）" title="Direct link to Abstract（摘要）">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="abstract摘要">Abstract（摘要）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#abstract%E6%91%98%E8%A6%81" class="hash-link" aria-label="Direct link to Abstract（摘要）" title="Direct link to Abstract（摘要）">​</a></h2>
 <p>摘要作为论文的开头部分，是整篇文章的核心思想浓缩表达。从读者的角度来看，摘要往往是他们接触论文的第一段文字，因此其写作质量直接影响读者是否有兴趣继续阅读下去。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
 <p>一个优秀的摘要应当做到<strong>清晰（clarity）、简洁（brevity）、明了（lucidity）</strong>，为了达成以上三个目的，我们建议使用三段式来完成摘要的书写，这个结构能够准确传达研究的关键信息，通常可以遵循以下基本结构：</p>
@@ -629,7 +628,7 @@
 <blockquote>
 <p>Our model is experimentally evaluated, and it is also applied to four benchmark datasets: UCI DSA, UCI HAR, WISDM, and IM-WSHA. The experimental results demonstrate that the proposed approach achieves recognition accuracies of 97.69%, 97.92%, 98.12%, and 90.6%, indicating excellent recognition performance. Additionally, we performed K-fold cross-validation on the random forest model and utilized ROC curves for the SVM classifier to assess the model’s generalization ability. The results indicate that our multi-layer classifier model exhibits robust generalization capabilities.</p>
 </blockquote>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction介绍">Introduction（介绍）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#introduction%E4%BB%8B%E7%BB%8D" class="hash-link" aria-label="Direct link to Introduction（介绍）" title="Direct link to Introduction（介绍）">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction介绍">Introduction（介绍）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#introduction%E4%BB%8B%E7%BB%8D" class="hash-link" aria-label="Direct link to Introduction（介绍）" title="Direct link to Introduction（介绍�）">​</a></h2>
 <p><strong>“Introduction”</strong> 顾名思义，是整篇论文的开端，它不仅介绍研究背景与核心模型，更是作者站在专业视角，以通俗且严谨的语言引导读者理解全文核心思想的关键部分。尽管引言部分没有固定格式，但写作时仍应遵循一定的逻辑和结构，并结合不断练习和积累提升写作质量。一个好的 Introduction 能够帮助不了解你研究领域的读者，在短时间内把握论文的主题、研究意义以及你在其中的贡献。因此，Introduction 不是背景的堆砌，而是一个故事的开端。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议-1">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE-1" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
 <ol>
@@ -676,13 +675,34 @@
 <blockquote>
 <p>In this paper, we propose the XR-KS (detailed description is given in Section 2) design aimed at addressing the issue of confusion between similar activities. To address the issue of similar activity feature similarity, we propose an SVM classification approach that utilizes KFDA. This approach effectively categorizes similar activities. Additionally, we conducted classification experiments on four common benchmark datasets and performed detailed analyses on these datasets. We compared our model to mainstream classification models. Experimental results demonstrate that our model exhibits excellent classification performance...</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第四段简明扼要地总结本文的主要贡献"><strong>第四段</strong>：简明扼要地总结本文的主要贡献。<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E5%9B%9B%E6%AE%B5%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E5%9C%B0%E6%80%BB%E7%BB%93%E6%9C%AC%E6%96%87%E7%9A%84%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE" class="hash-link" aria-label="Direct link to 第四段简明扼要地总结本文的主要贡献" title="Direct link to 第四段简明扼要地总结本文的主要贡献">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第四段简明扼要地总结本文的主要贡献"><strong>第四段</strong>：简明扼要地总结本文的主要贡献。<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E5%9B%9B%E6%AE%B5%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E5%9C%B0%E6%80%BB%E7%BB%93%E6%9C%AC%E6%96%87%E7%9A%84%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE" class="hash-link" aria-label="Direct link to 第四段简明扼要地总结本文的主要贡献" title="Direct link to 第四段简明扼要地总结本文的主要��贡献">​</a></h4>
 <p>例如：</p>
 <blockquote>
 <p>The remaining sections of this paper are organized as follows: Section 2 provides a brief introduction to the work carried out in this paper, along with details about the dataset used. Section 3 conducts a basic data analysis and employs appropriate data preprocessing techniques. This section introduces our proposed approach for human motion, which is based on a multi-layer classifier. Section 4 presents the experimental setup, provides results for our proposed method on multiple datasets, and offers an analysis and discussion of these results. Finally, in Section 5, we will summarize the insights gathered from these experiments and outline future directions.</p>
 </blockquote>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="methods-方法">Methods （方法）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#methods-%E6%96%B9%E6%B3%95" class="hash-link" aria-label="Direct link to Methods （方法）" title="Direct link to Methods （方法）">​</a></h3>
-<p>方法部分同样要参考许多同一领域的论文，看看同一领域的论文是如何撰写文章的，一般来说，我们会先把</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="methods-方法">Methods （方法）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#methods-%E6%96%B9%E6%B3%95" class="hash-link" aria-label="Direct link to Methods （方法）" title="Direct link to Methods （方法）">​</a></h2>
+<p>方法部分同样需要广泛参考同领域的文献，了解该领域在方法描述方面的写作规范与表达方式。通常建议先阐明整体研究框架与核心思路，再逐步展开每个关键步骤的具体实现细节，以保证结构清晰、内容完整，并符合通行的学术表达习惯。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议-2">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE-2" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
+<ul>
+<li><strong>图文结合，提升可读性</strong><br>
+<!-- -->推荐采用<strong>流程图或示意图结合文字描述</strong>的方式，更直观地展示方法步骤。例如，以下几幅图可用于概括整体流程或关键步骤的执行逻辑，有助于读者迅速理解方法框架与技术路径：</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/23/A2mhJESQIN9zKgV.jpg" alt="1.jpg" class="img_ev3q"><br>
+<img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/23/rXQxM4KBhjmGEi2.jpg" alt="2.jpg" class="img_ev3q"><br>
+<img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/23/bd9flHcDg5EGpeC.png" alt="3.jpg" class="img_ev3q"><br>
+<img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/23/MWGm1gHEr3eFvOP.png" alt="4.png" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>文字描述需参考规范表达</strong><br>
+<!-- -->在撰写文字说明时，应尽可能参照该领域内已发表的高质量论文，模仿其术语使用、句式结构与逻辑顺序。重点突出方法的创新点和与已有方法的区别，避免泛泛而谈。</p>
+</li>
+<li>
+<p><strong>注意结构层次与术语统一</strong><br>
+<!-- -->建议将方法部分划分为若干子模块（如“整体框架”、“预处理阶段”、“模型结构”、“训练策略”、“评估指标”等），层层推进，逻辑清晰。同时注意统一使用关键术语，避免描述不一致造成歧义。</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="results-结果">Results （结果）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#results-%E7%BB%93%E6%9E%9C" class="hash-link" aria-label="Direct link to Results （结果）" title="Direct link to Results （结果）">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="discussion-讨论">Discussion （讨论）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#discussion-%E8%AE%A8%E8%AE%BA" class="hash-link" aria-label="Direct link to Discussion （讨论）" title="Direct link to Discussion （讨论）">​</a></h3>]]></content:encoded>
             <category>从入门到入土？不，是精通！科技论文完全指南</category>
         </item>
         <item>
