@@ -469,7 +469,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>当我们的研究陷入停滞、模型性能无法提升、方法效果不理想时，查阅相关领域的论文可以帮助我们了解其他研究者是如何处理类似问题的，是否有新的算法、思路或改进方向。通过横向对比和启发式学习，往往能找到新的突破口。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-初入某个领域系统了解研究现状">2. 初入某个领域，系统了解研究现状<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#2-%E5%88%9D%E5%85%A5%E6%9F%90%E4%B8%AA%E9%A2%86%E5%9F%9F%E7%B3%BB%E7%BB%9F%E4%BA%86%E8%A7%A3%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6" class="hash-link" aria-label="Direct link to 2. 初入某个领域，系统了解研究现状" title="Direct link to 2. 初入某个领域，系统了解研究现状">​</a></h3>
 <p>如果我们刚进入一个新的研究方向，需要对该领域的基础理论、主流方法、发展趋势有一个全面的认识。此时，查找综述性论文（Review）或经典文献，能够帮助我们迅速建立知识框架，避免闭门造车。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-优化已有方法寻找更好的技术路线">3. 优化已有方法，寻找更好的技术路线<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#3-%E4%BC%98%E5%8C%96%E5%B7%B2%E6%9C%89%E6%96%B9%E6%B3%95%E5%AF%BB%E6%89%BE%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF" class="hash-link" aria-label="Direct link to 3. 优化已有方法，寻找更好的技术路线" title="Direct link to 3. 优化已有方法，寻找更好的技术路线">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-优化已有方法寻找更好的技术路线">3. 优化已有方法，寻找更好的技术路线<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#3-%E4%BC%98%E5%8C%96%E5%B7%B2%E6%9C%89%E6%96%B9%E6%B3%95%E5%AF%BB%E6%89%BE%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF" class="hash-link" aria-label="Direct link to 3. 优化已有方法，�寻找更好的技术路线" title="Direct link to 3. 优化已有方法，寻找更好的技术路线">​</a></h3>
 <p>有时候我们已经有了初步的模型或方案，但仍希望进一步优化性能。这时可以查阅最近几年在该细分方向上的进展，了解是否有更先进的架构、损失函数、数据处理策略等。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-撰写论文或开题报告寻找文献支持">4. 撰写论文或开题报告，寻找文献支持<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#4-%E6%92%B0%E5%86%99%E8%AE%BA%E6%96%87%E6%88%96%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A%E5%AF%BB%E6%89%BE%E6%96%87%E7%8C%AE%E6%94%AF%E6%8C%81" class="hash-link" aria-label="Direct link to 4. 撰写论文或开题报告，寻找文献支持" title="Direct link to 4. 撰写论文或开题报告，寻找文献支持">​</a></h3>
 <p>在写作过程中，我们需要引用权威文献来支撑自己的论点，或者在开题时展示已有研究基础。这就要求我们查阅相关工作，找出与我们研究课题最紧密相关的论文，并进行引用和比较分析。</p>
@@ -514,7 +514,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>“阅读我们的文献，是从事科学研究的<strong>基础</strong>，也是我们研究生的必修课程。”</p>
 </blockquote>
 <p>从头到尾逐字翻译或阅读一篇科技论文，实际上是<strong>效率最低</strong>的方式。经验丰富的科研人员通常会优先关注文章中<strong>最关键的信息</strong>，以进行快速判断其研究价值与相关性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="正确有效的阅读一篇科技论文">正确有效的阅读一篇科技论文<a href="https://your-docusaurus-test-site.com/blog/02-how-to-read-research-paper#%E6%AD%A3%E7%A1%AE%E6%9C%89%E6%95%88%E7%9A%84%E9%98%85%E8%AF%BB%E4%B8%80%E7%AF%87%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87" class="hash-link" aria-label="Direct link to 正确有效的阅读一篇科技论文" title="Direct link to 正确有效的阅读一篇科技论文">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="正确有效的阅读一篇科技论文">正确有效的阅读一篇科技论文<a href="https://your-docusaurus-test-site.com/blog/02-how-to-read-research-paper#%E6%AD%A3%E7%A1%AE%E6%9C%89%E6%95%88%E7%9A%84%E9%98%85%E8%AF%BB%E4%B8%80%E7%AF%87%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87" class="hash-link" aria-label="Direct link to 正确有效的阅读一篇��科技论文" title="Direct link to 正确有效的阅读一篇科技论文">​</a></h2>
 <p>阅读一篇科技论文效率最低的方法就是从头到尾<strong>翻译</strong>。专家研究人员会从文章中较为关键的点进行查找发现。一般来说，大多数科技论文会分为五个部分，如图红色部分：</p>
 <p><img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/15/hD3idkFqRsogl1K.png" alt="7.png" class="img_ev3q"></p>
 <ul>
@@ -621,7 +621,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <li><strong>第三段</strong>：<strong>主要结果与结论</strong>（最终发现了什么，有哪些贡献或意义）</li>
 </ul>
 <p>这样的写作框架不仅能够帮助读者迅速把握论文的研究重点，也为后续的引言和正文做好铺垫。</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段研究背景与现状现存问题或研究空白"><strong>第一段</strong>：<strong>研究背景与现状</strong>（现存问题或研究空白）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E4%B8%8E%E7%8E%B0%E7%8A%B6%E7%8E%B0%E5%AD%98%E9%97%AE%E9%A2%98%EF%BF%BD%EF%BF%BD%E6%88%96%E7%A0%94%E7%A9%B6%E7%A9%BA%E7%99%BD" class="hash-link" aria-label="Direct link to 第一段研究背景与现状现存问题或研究空白" title="Direct link to 第一段研究背景与现状现存问题或研究空白">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段研究背景与现状现存问题或研究空白"><strong>第一段</strong>：<strong>研究背景与现状</strong>（现存问题或研究空白）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E4%B8%8E%E7%8E%B0%E7%8A%B6%E7%8E%B0%E5%AD%98%E9%97%AE%E9%A2%98%E6%88%96%E7%A0%94%E7%A9%B6%E7%A9%BA%E7%99%BD" class="hash-link" aria-label="Direct link to 第一段研究背景与现状现存问题或研究空白" title="Direct link to 第一段研究背景与现状现存问题或研究空白">​</a></h4>
 <p>首先是描述现状，在描述现状中一般采取先扬后抑，先肯定 XXX 技术已经取得了显著进展，再指出其仍存在的不足之处。这些不足应与我们后续研究所要解决的问题密切相关，才能确保第一段在逻辑上的连贯与必要性。在此基础上，我们还得简要介绍我们提出的模型，它跟其他模型的不同之处：</p>
 <p>例如：</p>
 <blockquote>
@@ -676,7 +676,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <blockquote>
 <p>Human activity recognition (HAR) involves identifying various human behaviors through a series of observations of individuals and their surrounding environment [1]. HAR has been generally applied in many fields, such as security and surveillance [2], sports and fitness [3], industry and manufacturing [4], autonomous driving [5], and the references therein...</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段指出当前研究的挑战空白或未解决问题"><strong>第二段</strong>：指出当前研究的挑战、空白或未解决问题；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E6%8C%87%E5%87%BA%E5%BD%93%E5%89%8D%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8C%91%E6%88%98%E7%A9%BA%E7%99%BD%E6%88%96%E6%9C%AA%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98" class="hash-link" aria-label="Direct link to 第二段指出当��前研究的挑战空白或未解决问题" title="Direct link to 第二段指出当前研究的挑战空白或未解决问题">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段指出当前研究的挑战空白或未解决问题"><strong>第二段</strong>：指出当前研究的挑战、空白或未解决问题；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E6%8C%87%E5%87%BA%E5%BD%93%E5%89%8D%E7%A0%94%E7%A9%B6%E7%9A%84%E6%8C%91%E6%88%98%E7%A9%BA%E7%99%BD%E6%88%96%E6%9C%AA%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98" class="hash-link" aria-label="Direct link to 第二段指出当前研究的挑战空白或未解决问题" title="Direct link to 第二段指出当前研究的挑战空白或未解决问题">​</a></h4>
 <p>例如：</p>
 <blockquote>
 <p>However, a problem was identified where single-classification models can cause confusion when distinguishing similar activities, such as ascending stairs and descending stairs. In a study conducted by Jansi et al. [23], they utilized chaotic mapping to compress raw tri-axial accelerometer data and extracted 38 time-domain and frequency-domain features. These features included mean, standard deviation, root mean square, dominant frequency coefficient, spectral energy, and others. They achieved a recognition accuracy of 83.22% in human activity recognition...</p>
@@ -1149,7 +1149,8 @@ Figure 9. Comparison chart of random forest model recognition results. (The trai
 <p>    We introduce <em>physics informed neural networks</em>– neural networks that are trained to solve supervised learning tasks while respecting any given law of physics described by general nonlinear partial differential equations. In this two part treatise, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct classes of algorithms, namely continuous time and discrete time models. The resulting neural networks form a new class of data-efficient universal function approximators that naturally encode any underlying physical laws as prior information. In this first part, we demonstrate how these networks can be used to infer solutions to partial differential equations, and obtain physics-informed surrogate models that are fully differentiable with respect to all input coordinates and free parameters.</p>
 </blockquote>
 <p>    摘要的内容如上，建议多读几次，本笔记比较粗浅，有时间建议看看<a href="https://arxiv.org/abs/1711.10561" target="_blank" rel="noopener noreferrer">原文</a>。</p>
-<p>    翻译成中文（deepl 翻译）：我们介绍了物理学上的神经网络 - 神经网络被训练来解决监督学习任务，同时尊重由一般非线性偏微分方程描述的任何特定的物理学规律。在这两部分论文中，我们介绍了我们在解决两类主要问题方面的发展：数据驱动的解决方案和数据驱动的偏微分方程的发现。根据可用数据的性质和安排，我们设计了两类不同的算法，即连续时间和离散时间模型。由此产生的神经网络形成了一类新的数据高效的通用函数近似器，自然地将任何潜在的物理规律编码为先验信息。在这第一部分，我们展示了这些网络如何被用来推断偏微分方程的解决方案，并获得物理信息的代用模型，这些模型对于所有输入坐标和自由参数是完全可微的。</p>]]></content:encoded>
+<p>    翻译成中文（deepl 翻译）：我们介绍了物理学上的神经网络 - 神经网络被训练来解决监督学习任务，同时尊重由一般非线性偏微分方程描述的任何特定的物理学规律。在这两部分论文中，我们介绍了我们在解决两类主要问题方面的发展：数据驱动的解决方案和数据驱动的偏微分方程的发现。根据可用数据的性质和安排，我们设计了两类不同的算法，即连续时间和离散时间模型。由此产生的神经网络形成了一类新的数据高效的通用函数近似器，自然地将任何潜在的物理规律编码为先验信息。在这第一部分，我们展示了这些网络如何被用来推断偏微分方程的解决方案，并获得物理信息的代用模型，这些模型对于所有输入坐标和自由参数是完全可微的。</p>
+<h2></h2>]]></content:encoded>
         </item>
     </channel>
 </rss>
