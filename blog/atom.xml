@@ -420,7 +420,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
         <summary type="html"><![CDATA[科技论文是学者与研究人员进行学术交流的重要方式。通过阅读科技论文，不仅可以了解当前领域的研究进展，还能提升自己对复杂问题的认知能力和理解力。在学习过程中，书籍 📕、网站 🖥、期刊论文等都是常见且有效的起点资源。]]></summary>
         <content type="html"><![CDATA[<p>科技论文是学者与研究人员进行学术交流的重要方式。通过阅读科技论文，不仅可以了解当前领域的研究进展，还能提升自己对复杂问题的<strong>认知能力和理解力</strong>。在学习过程中，书籍 📕、网站 🖥、期刊论文等都是常见且有效的起点资源。</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-如何找到一篇合适的科技论文">🔍 如何找到一篇合适的科技论文<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#-%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E4%B8%80%E7%AF%87%E5%90%88%E9%80%82%E7%9A%84%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87" class="hash-link" aria-label="Direct link to 🔍 如何找到一篇合适的�科技论文" title="Direct link to 🔍 如何找到一篇合适的科技论文">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-如何找到一篇合适的科技论文">🔍 如何找到一篇合适的科技论文<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#-%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E4%B8%80%E7%AF%87%E5%90%88%E9%80%82%E7%9A%84%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87" class="hash-link" aria-label="Direct link to 🔍 如何找到一篇合适的科技论文" title="Direct link to 🔍 如何找到一篇合适的科技论文">​</a></h2>
 <p>在上一节中，我们已经了解了科技论文的基本结构及其产生过程，相信你对科技论文已有初步认识。接下来，我们将学习<strong>如何寻找一篇适合阅读的科技论文</strong>。</p>
 <p>找到一篇合适的论文，对于入门新领域、拓展知识视野具有重要意义。一篇好的论文能够帮助你：</p>
 <ul>
@@ -1175,7 +1175,7 @@ Figure 9. Comparison chart of random forest model recognition results. (The trai
         <category label="Bioinformatic analysis" term="Bioinformatic analysis"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Physics Informed Deep Learning (Part I):Data-driven Solutions of Nonlinear Partial Differential Equations]]></title>
+        <title type="html"><![CDATA[Physics Informed Deep Learning (Part I) Data-driven  Solutions of Nonlinear Partial Differential Equations]]></title>
         <id>https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one</id>
         <link href="https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one"/>
         <updated>2023-06-17T00:00:00.000Z</updated>
@@ -1204,7 +1204,10 @@ Figure 9. Comparison chart of random forest model recognition results. (The trai
 </blockquote>
 <p>    摘要的内容如上，建议多读几次，本笔记比较粗浅，有时间建议看看<a href="https://arxiv.org/abs/1711.10561" target="_blank" rel="noopener noreferrer">原文</a>。</p>
 <p>    翻译成中文（deepl 翻译）：我们介绍了物理学上的神经网络 - 神经网络被训练来解决监督学习任务，同时尊重由一般非线性偏微分方程描述的任何特定的物理学规律。在这两部分论文中，我们介绍了我们在解决两类主要问题方面的发展：数据驱动的解决方案和数据驱动的偏微分方程的发现。根据可用数据的性质和安排，我们设计了两类不同的算法，即连续时间和离散时间模型。由此产生的神经网络形成了一类新的数据高效的通用函数近似器，自然地将任何潜在的物理规律编码为先验信息。在这第一部分，我们展示了这些网络如何被用来推断偏微分方程的解决方案，并获得物理信息的代用模型，这些模型对于所有输入坐标和自由参数是完全可微的。</p>
-<h2></h2>]]></content>
+<p>原文中有一段话：<code>These developments are presented in the context of two main problem classes: data-driven solution and data-driven discovery of partial differential equations.</code>这些进展围绕两类核心问题展开：数据驱动的 PDE 求解与 PDE 结构的自动发现，分别引导了 PINN 在数据利用和物理约束建模两个方向上的持续优化。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="相关研究">相关研究<a href="https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one#%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6" class="hash-link" aria-label="Direct link to 相关研究" title="Direct link to 相关研究">​</a></h2>
+<p>定义方程</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="burgers-方程">Burgers 方程<a href="https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one#burgers-%E6%96%B9%E7%A8%8B" class="hash-link" aria-label="Direct link to Burgers 方程" title="Direct link to Burgers 方程">​</a></h3>]]></content>
         <author>
             <name>Tanger</name>
             <uri>https://github.com/redhat123456</uri>
