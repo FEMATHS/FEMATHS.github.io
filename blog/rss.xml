@@ -474,7 +474,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>有时候我们已经有了初步的模型或方案，但仍希望进一步优化性能。这时可以查阅最近几年在该细分方向上的进展，了解是否有更先进的架构、损失函数、数据处理策略等。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-撰写论文或开题报告寻找文献支持">4. 撰写论文或开题报告，寻找文献支持<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#4-%E6%92%B0%E5%86%99%E8%AE%BA%E6%96%87%E6%88%96%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A%E5%AF%BB%E6%89%BE%E6%96%87%E7%8C%AE%E6%94%AF%E6%8C%81" class="hash-link" aria-label="Direct link to 4. 撰写论文或开题报告，寻找文献支持" title="Direct link to 4. 撰写论文或开题报告，寻找文献支持">​</a></h3>
 <p>在写作过程中，我们需要引用权威文献来支撑自己的论点，或者在开题时展示已有研究基础。这就要求我们查阅相关工作，找出与我们研究课题最紧密相关的论文，并进行引用和比较分析。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-跟踪前沿进展把握学术动态">5. 跟踪前沿进展，把握学术动态<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#5-%E8%B7%9F%E8%B8%AA%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95%E6%8A%8A%E6%8F%A1%E5%AD%A6%E6%9C%AF%E5%8A%A8%E6%80%81" class="hash-link" aria-label="Direct link to 5. 跟踪前沿进展，把握学术动态" title="Direct link to 5. 跟踪前沿进展，把握学术动态">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-跟踪前沿进展把握学术动态">5. 跟踪前沿进展，把握学术动态<a href="https://your-docusaurus-test-site.com/blog/01-how-to-find-good-research-paper#5-%E8%B7%9F%E8%B8%AA%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95%E6%8A%8A%E6%8F%A1%E5%AD%A6%E6%9C%AF%E5%8A%A8%E6%80%81" class="hash-link" aria-label="Direct link to 5. 跟踪前沿进展，把握学术动态" title="Direct link to 5. 跟踪前沿进展，把握学�术动态">​</a></h3>
 <p>对于希望保持学术敏锐度的研究者来说，定期浏览顶会（如 NeurIPS、ICLR、CVPR 等）或预印本平台（如 arXiv）上的最新论文，有助于掌握研究趋势、技术热点和潜在研究方向。</p>
 <hr>
 <p>※ 📌 无论是哪种需求，选对平台和搜索关键词，掌握基本的检索技巧，都能大幅提高查阅效率。</p>
@@ -687,7 +687,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <blockquote>
 <p>In this paper, we propose the XR-KS (detailed description is given in Section 2) design aimed at addressing the issue of confusion between similar activities. To address the issue of similar activity feature similarity, we propose an SVM classification approach that utilizes KFDA. This approach effectively categorizes similar activities. Additionally, we conducted classification experiments on four common benchmark datasets and performed detailed analyses on these datasets. We compared our model to mainstream classification models. Experimental results demonstrate that our model exhibits excellent classification performance...</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第四段简明扼要地总结本文的主要贡献"><strong>第四段</strong>：简明扼要地总结本文的主要贡献。<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E5%9B%9B%E6%AE%B5%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E5%9C%B0%E6%80%BB%E7%BB%93%E6%9C%AC%E6%96%87%E7%9A%84%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE" class="hash-link" aria-label="Direct link to 第四段简明扼要地总结本文的主要贡献" title="Direct link to 第四段简明扼要地总结本文的主要贡献">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第四段简明扼要地总��结本文的主要贡献"><strong>第四段</strong>：简明扼要地总结本文的主要贡献。<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E5%9B%9B%E6%AE%B5%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E5%9C%B0%E6%80%BB%E7%BB%93%E6%9C%AC%E6%96%87%E7%9A%84%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE" class="hash-link" aria-label="Direct link to 第四段简明扼要地总结本文的主要贡献" title="Direct link to 第四段简明扼要地总结本文的主要贡献">​</a></h4>
 <p>例如：</p>
 <blockquote>
 <p>The remaining sections of this paper are organized as follows: Section 2 provides a brief introduction to the work carried out in this paper, along with details about the dataset used. Section 3 conducts a basic data analysis and employs appropriate data preprocessing techniques. This section introduces our proposed approach for human motion, which is based on a multi-layer classifier. Section 4 presents the experimental setup, provides results for our proposed method on multiple datasets, and offers an analysis and discussion of these results. Finally, in Section 5, we will summarize the insights gathered from these experiments and outline future directions.</p>
@@ -1187,6 +1187,15 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"></path></svg></span></s
 <p align="center"><img src="https://s2.loli.net/2025/07/02/AznBjYR2JgLPpdK.png" alt="18.png"></p>
 <p>该实验在当时取得了较为优秀的结果。虽然近年来 PINN 方法的精度已有显著提升，误差已可降至极低水平，但考虑到该论文发表于 2017 年，其工作在当时仍具有代表性和参考价值。</p>
 <p>此外，文章其他部分内容相对常规，若能够理解其中关于 Burgers 方程的实验与分析，基本上已经把握了该论文的核心思想。</p>]]></content:encoded>
+            <category>PINN</category>
+            <category>Machine Learn</category>
+            <category>Thesis Study Notes</category>
+        </item>
+        <item>
+            <title><![CDATA[Deep Learning-Based Numerical Methods for High-Dimensional Parabolic Partial Differential Equations and Backward Stochastic Differential Equations]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/13-Deep Learning-Based Numerical Methods for High-Dimensional Parabolic Partial Differential Equations and Backward Stochastic Differential Equations</link>
+            <guid>https://your-docusaurus-test-site.com/blog/13-Deep Learning-Based Numerical Methods for High-Dimensional Parabolic Partial Differential Equations and Backward Stochastic Differential Equations</guid>
+            <pubDate>Sat, 17 Jun 2023 00:00:00 GMT</pubDate>
             <category>PINN</category>
             <category>Machine Learn</category>
             <category>Thesis Study Notes</category>
