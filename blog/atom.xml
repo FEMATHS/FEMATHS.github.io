@@ -1346,13 +1346,12 @@ Figure 9. Comparison chart of random forest model recognition results. (The trai
 <p>    想要明白 PINN，先从 PINN 是什么说起，PINN 其实是 Physics Informed Deep Learning 的缩写，中文中比较准确的翻译是<strong>物理信息深度学习</strong>，人话就是结合了物理信息的深度学习模型。</p>
 <p>    其实将机器学习用在求解偏微分方程上不是什么难事，但是直接用肯定是不行的，主要面对了几个问题，只要能很好的解决以下问题，那问题就迎刃而解了。</p>
 <ul>
-<li>
-<p>数据采集：数据采集的成本太高几乎无法实现，尤其是对小样本的数据样本，绝大多数的机器学习技术缺乏鲁棒性，无法提供任何收敛保证。</p>
-</li>
-<li>
-<p>实际</p>
-</li>
+<li>数据采集：数据采集的成本太高几乎无法实现，尤其是对小样本的数据样本，绝大多数的机器学习技术缺乏鲁棒性，无法提供任何收敛保证。</li>
 </ul>
+<p>我们也来探讨一下传统方法的优劣，传统方法会有（<strong>维度灾难</strong>），传统数值算法或者主流软件都需要构造剖分，如果维度太高会造成<em>维度灾难</em>，对于 d 维空间，假设每个维度打 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span> 个网格点，那么一共需要 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>d</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">d^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> 个网格点。</p>
+<p>由此的话，我们开始想到用神经网络来解决数值算法问题。</p>
+<p>市面上主要神经网络求解偏微分方程模型：</p>
+<table><thead><tr><th>方法</th><th>二阶导</th><th>惩罚系数</th><th>高维空间</th><th>测试函数</th><th>精度</th><th>时间</th></tr></thead><tbody><tr><td>Deep Ritz</td><td>×</td><td>√</td><td>√</td><td>×</td><td>good</td><td>long</td></tr><tr><td>Deep Galerkin</td><td>×</td><td>×</td><td>×</td><td>√</td><td>better</td><td>long</td></tr><tr><td>PINN</td><td>√</td><td>×</td><td>×</td><td>×</td><td>best</td><td>longest</td></tr><tr><td>PFNN</td><td>×</td><td>×</td><td>√</td><td>×</td><td>better</td><td>longest</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="abstract摘要">Abstract（摘要）<a href="https://your-docusaurus-test-site.com/blog/04-Physics-Informed-Deep-Learning-Part-one#abstract%E6%91%98%E8%A6%81" class="hash-link" aria-label="Direct link to Abstract（摘要）" title="Direct link to Abstract（摘要）">​</a></h2>
 <blockquote>
 <p>    We introduce <em>physics informed neural networks</em>– neural networks that are trained to solve supervised learning tasks while respecting any given law of physics described by general nonlinear partial differential equations. In this two part treatise, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct classes of algorithms, namely continuous time and discrete time models. The resulting neural networks form a new class of data-efficient universal function approximators that naturally encode any underlying physical laws as prior information. In this first part, we demonstrate how these networks can be used to infer solutions to partial differential equations, and obtain physics-informed surrogate models that are fully differentiable with respect to all input coordinates and free parameters.</p>
