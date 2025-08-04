@@ -207,8 +207,8 @@ U &amp;= g, \quad \mathbf{x} \in \partial \Omega
 </li>
 </ul>
 <hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-总结">✅ 总结：<a href="https://your-docusaurus-test-site.com/blog/15-Novel%20and%20general%20discontinuity-removing%20PINNs%20for%20elliptic%20interface%20problems#-%E6%80%BB%E7%BB%93" class="hash-link" aria-label="Direct link to ✅ 总结：" title="Direct link to ✅ 总结：">​</a></h2>
 <blockquote>
-<p>✅ 总结：</p>
 <ul>
 <li>Scheme A：高精度但训练成本大，适合规则问题；</li>
 <li>Scheme B：更灵活，适配中等复杂度问题；</li>
