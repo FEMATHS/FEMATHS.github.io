@@ -1212,7 +1212,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>摘要作为论文的开头部分，是整篇文章的核心思想浓缩表达。从读者的角度来看，摘要往往是他们接触论文的第一段文字，因此其写作质量直接影响读者是否有兴趣继续阅读下去。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-写作建议">✏️ 写作建议<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%EF%B8%8F-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AE" class="hash-link" aria-label="Direct link to ✏️ 写作建议" title="Direct link to ✏️ 写作建议">​</a></h3>
 <p>一个优秀的摘要应当做到<strong>清晰（clarity）、简洁（brevity）、明了（lucidity）</strong>，为了达成以上三个目的，我们建议使用三段式来完成摘要的书写，这个结构能够准确传达研究的关键信息，通常可以遵循以下基本结构：</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-推荐结构模板">✅ 推荐结构模板<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E6%8E%A8%E8%8D%90%E7%BB%93%E6%9E%84%E6%A8%A1%E6%9D%BF" class="hash-link" aria-label="Direct link to ✅ 推荐结构模板" title="Direct link to ✅ 推荐结构模�板">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-推荐结构模板">✅ 推荐结构模板<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E6%8E%A8%E8%8D%90%E7%BB%93%E6%9E%84%E6%A8%A1%E6%9D%BF" class="hash-link" aria-label="Direct link to ✅ 推荐结构模板" title="Direct link to ✅ 推荐结构模板">​</a></h3>
 <ul>
 <li><strong>第一段</strong>：<strong>研究背景与现状</strong>（现存问题或研究空白）</li>
 <li><strong>第二段</strong>：<strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）</li>
@@ -1225,7 +1225,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <blockquote>
 <p>Sensor-based human activity recognition is now well developed, but there are still many challenges, such as insufficient accuracy in the identification of similar activities. To overcome this issue, we collect data during similar human activities using three-axis acceleration and gyroscope sensors. We developed a model capable of classifying similar activities of human behavior, and the effectiveness and generalization capabilities of this model are evaluated. Based on the standardization and normalization of data, we consider the inherent similarities of human activity behaviors by introducing the multi-layer classifier model.</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段研究方法或解决方案本研究采用了什么方法模型或思路"><strong>第二段</strong>：<strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E6%88%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9C%AC%E7%A0%94%E7%A9%B6%E9%87%87%E7%94%A8%E4%BA%86%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E6%A8%A1%E5%9E%8B%E6%88%96%E6%80%9D%E8%B7%AF" class="hash-link" aria-label="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路" title="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第二段研究方法或解决方案本研究采用了什么方法模型或思路"><strong>第二段</strong>：<strong>研究方法或解决方案</strong>（本研究采用了什么方法、模型或思路）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%BA%8C%E6%AE%B5%E7%A0%94%E7%A9%B6%EF%BF%BD%E6%96%B9%E6%B3%95%E6%88%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9C%AC%E7%A0%94%E7%A9%B6%E9%87%87%E7%94%A8%E4%BA%86%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E6%A8%A1%E5%9E%8B%E6%88%96%E6%80%9D%E8%B7%AF" class="hash-link" aria-label="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路" title="Direct link to 第二段研究方法或解决方案本研究采用了什么方法模型或思路">​</a></h4>
 <p>紧接着应阐明本文所采用的研究方法。该部分没有严格的结构要求，但应以<strong>准确传达方法本质</strong>为首要目标，其次才考虑语言的<strong>简洁与凝练</strong>。在确保表达准确的前提下，力求用最直接的方式让读者理解所提出方法的核心思想与实施方式。</p>
 <p>例如：</p>
 <blockquote>
@@ -1269,7 +1269,7 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <li><strong>第三段</strong>：概述你的方法、思路或创新点；</li>
 <li><strong>第四段</strong>：简明扼要地总结本文的主要贡献。</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段引入研究背景和领域发展现状"><strong>第一段</strong>：引入研究背景和领域发展现状；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E5%BC%95%E5%85%A5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E5%92%8C%E9%A2%86%E5%9F%9F%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6" class="hash-link" aria-label="Direct link to 第一段引入研究背景和领域发展现状" title="Direct link to 第一�段引入研究背景和领域发展现状">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="第一段引入研究背景和领域发展现状"><strong>第一段</strong>：引入研究背景和领域发展现状；<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#%E7%AC%AC%E4%B8%80%E6%AE%B5%E5%BC%95%E5%85%A5%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E5%92%8C%E9%A2%86%E5%9F%9F%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6" class="hash-link" aria-label="Direct link to 第一段引入研究背景和领域发展现状" title="Direct link to 第一段引入研究背景和领域发展现状">​</a></h4>
 <p>例如：</p>
 <blockquote>
 <p>Human activity recognition (HAR) involves identifying various human behaviors through a series of observations of individuals and their surrounding environment [1]. HAR has been generally applied in many fields, such as security and surveillance [2], sports and fitness [3], industry and manufacturing [4], autonomous driving [5], and the references therein...</p>
@@ -1374,7 +1374,7 @@ Figure 9. Comparison chart of random forest model recognition results. (The trai
 <p>Table 3. Number of features and error rate, accuracy rate, training times, and running time (mean ± std).</p>
 <p><img decoding="async" loading="lazy" src="https://s2.loli.net/2025/06/24/sCwoquBryvG1lci.png" alt="15.png" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="discussion-讨论">Discussion （讨论）<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#discussion-%E8%AE%A8%E8%AE%BA" class="hash-link" aria-label="Direct link to Discussion （讨论）" title="Direct link to Discussion （讨论）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-写作建议conclusion-或-discussion-部分">✅ 写作建议：Conclusion 或 Discussion 部分<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AEconclusion-%E6%88%96-discussion-%E9%83%A8%E5%88%86" class="hash-link" aria-label="Direct link to ✅ 写作建议：Conclusion 或 Discussion 部分" title="Direct link to ✅ 写作建议：Conclusion 或 Discussion 部分">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-写作建议conclusion-或-discussion-部分">✅ 写作建议：Conclusion 或 Discussion 部分<a href="https://your-docusaurus-test-site.com/blog/03-how-to-write-research-paper#-%E5%86%99%E4%BD%9C%E5%BB%BA%E8%AE%AEconclusion-%E6%88%96-discussion-%E9%83%A8%EF%BF%BD%E5%88%86" class="hash-link" aria-label="Direct link to ✅ 写作建议：Conclusion 或 Discussion 部分" title="Direct link to ✅ 写作建议：Conclusion 或 Discussion 部分">​</a></h3>
 <p>在科技论文中，<strong>讨论（Discussion）或结论（Conclusion）部分</strong>主要用于对全文内容进行简要总结，并指出当前研究的局限性与未来的改进方向。</p>
 <p>相比前文的方法、实验与结果部分，这一部分的撰写相对简洁，重点不在于再次重复技术细节，而在于：</p>
 <ul>
